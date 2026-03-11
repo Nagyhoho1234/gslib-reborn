@@ -1,0 +1,53 @@
+cff-version: 1.2.0
+title: "GSLIB Reborn — Anisotropy Assassin"
+message: >-
+  If you use this software, please cite the original GSLIB book
+  by Deutsch & Journel (1998), not this repository. This work
+  contains only minor build optimizations for modern hardware.
+type: software
+version: "2026.1"
+date-released: "2026-03-11"
+url: "https://github.com/Nagyhoho1234/gslib-reborn"
+repository-code: "https://github.com/Nagyhoho1234/gslib-reborn"
+keywords:
+  - geostatistics
+  - kriging
+  - simulation
+  - variogram
+  - GSLIB
+  - Fortran
+  - mining
+  - spatial-statistics
+
+authors:
+  - family-names: Fehér
+    given-names: Zsolt Zoltán
+    affiliation: University of Debrecen
+    orcid: "https://orcid.org/0009-0007-6659-4197"
+
+references:
+  - type: book
+    title: "GSLIB: Geostatistical Software Library and User's Guide"
+    edition: "2nd"
+    year: 1998
+    publisher:
+      name: Oxford University Press
+      city: New York
+    isbn: "978-0-19-510015-0"
+    authors:
+      - family-names: Deutsch
+        given-names: Clayton V.
+        affiliation: Stanford University
+      - family-names: Journel
+        given-names: André G.
+        affiliation: Stanford University
+
+abstract: >-
+  GSLIB Reborn is a 64-bit optimized recompilation of the classic GSLIB2
+  geostatistical software library (Deutsch & Journel, 1998) for modern
+  hardware. All 41 programs are compiled with Intel oneAPI ifx for 64-bit
+  systems with heap-based memory allocation, OpenMP support, and increased
+  parameter limits. The geostatistical algorithms are entirely the original
+  work of C.V. Deutsch and A.G. Journel of Stanford University. This
+  repository contains only minor build and performance optimizations.
+  The original unmodified source code is available at gslib.com.
