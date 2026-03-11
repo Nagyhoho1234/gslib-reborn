@@ -1,0 +1,65 @@
+
+ Data for SGSIM: Number of acceptable data  =      140
+                 Number trimmed             =        0
+                 Weighted Average           =       2.5281
+                 Weighted Variance          =      22.0868
+
+
+ Covariance Look up table and search for previously
+ simulated grid nodes.  The maximum range in each 
+ coordinate direction for covariance look up is:
+           X direction:    35.000000    
+           Y direction:    35.000000    
+           Z direction:    0.0000000    
+ Node Values are not searched beyond this distance!
+
+
+ Realization   1: number   =     2500
+                  mean     =      -0.0167 (close to 0.0?)
+                  variance =       0.8786 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   2: number   =     2500
+                  mean     =      -0.0046 (close to 0.0?)
+                  variance =       1.0314 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   3: number   =     2500
+                  mean     =       0.0271 (close to 0.0?)
+                  variance =       0.8610 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   4: number   =     2500
+                  mean     =       0.0295 (close to 0.0?)
+                  variance =       1.0719 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   5: number   =     2500
+                  mean     =      -0.1248 (close to 0.0?)
+                  variance =       1.1119 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   6: number   =     2500
+                  mean     =      -0.0407 (close to 0.0?)
+                  variance =       0.9606 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   7: number   =     2500
+                  mean     =      -0.0443 (close to 0.0?)
+                  variance =       0.8767 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   8: number   =     2500
+                  mean     =      -0.0777 (close to 0.0?)
+                  variance =       0.8861 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization   9: number   =     2500
+                  mean     =       0.0915 (close to 0.0?)
+                  variance =       1.0466 (close to gammabar(V,V)? approx. 1.0)
+
+
+ Realization  10: number   =     2500
+                  mean     =      -0.0305 (close to 0.0?)
+                  variance =       0.9002 (close to gammabar(V,V)? approx. 1.0)
+

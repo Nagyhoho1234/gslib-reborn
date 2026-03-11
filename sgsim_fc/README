@@ -1,0 +1,14 @@
+sgsim_fc - sequential Gaussian simulation program that integrates 
+secondary gridded data using full linear model of coregionalization (LMC), MM1 
+and MM2.
+Sgsim in GSLIB2 can handle only MM1.
+Parameter file for sgsim_fc is slightly different from sgsim.
+No variance reduction factor that was used to improve incorrectly used MM1
+is needed. MM1 requires correlation coefficient and primary variogram.
+MM2  requires correlation coefficient and  2 variograms. One (gamma_B) is 
+a secondary variogram, another (gamma_R) is  residual variogram. Their  
+weighted sum approximates primary variogram (see paper by Journel at SCRF 98). 
+gamma_prim=ro^2*gamma_B+(1-ro^2)*gamma_R.
+LMC requires 3 variograms - primary, cross and secondary. They should satisfy LMC 
+(see Goovarets or GSLIB manual). Note that MM2 is a particular case of LMC.
+

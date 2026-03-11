@@ -1,0 +1,72 @@
+!! Xgam Resources
+
+! colors and fonts:
+Xgam*XmText.foreground: black
+Xgam*XmText.background: white
+Xgam*swindow*foreground: black
+Xgam*swindow*background: white
+Xgam*panel.XmLabel*backgroundPixmap: 25_foreground
+Xgam*panel*title*backgroundPixmap: 25_foreground
+Xgam*author.fontList: *-i*16*
+Xgam*logo.fontList: -adobe-times-*24*
+Xgam*fontList: variable
+Xgam*logo.foreground: yellow
+Xgam*author.foreground: green
+Xgam*Status.foreground: red
+Xgam*Exit.accelerator:  <Key>Escape
+
+! geometry
+Xgam*form.width: 900
+Xgam*form.height: 700
+Xgam*swindow.rightAttachment: attach_position
+Xgam*swindow.rightPosition: 60
+
+! important
+Xgam*form*resizePolicy: RESIZE_GROW
+! program-wide resources
+Xgam*labeledText*right.x: 130
+Xgam*labeledText*right*width: 140
+Xgam*subMenu*background: cyan
+Xgam*options.packing: pack_column
+Xgam*options.numColumns: 2
+
+! function-scope resources
+Xgam*SelectVariable*variables*width: 120
+
+Xgam*strc.borderWidth: 1
+
+Xgam*varioBoard.borderWidth: 2
+!Xgam*swindow*borderWidth: 1
+Xgam*varioBoard*translations: #override \n\
+                     :<Key>\>: v_enlarge() \n\
+                     <Key>\<: v_reduce() \n\
+                     <Key>m: v_maximize()
+!                     <Key>d: v_switchDir() \n\
+
+Xgam*bMatrix.columnWidths:   8,8,8,8,8,8,8,8,8,8
+Xgam*bMatrix.fontList:   fixed
+
+!scattergram colors
+Xgam*H-scattergram*Scatboard*Scatdrawing.background: white
+
+!mm1_modeling colors
+Xgam*MM1_modeling*MM1_FORM*Cross_drawing.background: white
+
+!
+! Yap 1.5 Application defaults file
+!
+
+yap*stat_win*height:                  400
+yap*stat_win*width:                   400
+yap*main_win.height:                  700
+yap*main_win.width:                   900
+yap*twod_win.height:                  400
+yap*twod_win.width:                   400
+yap*debug_msg.fontList:             fixed
+yap*debug_msg*rows:                    20
+yap*debug_msg*columns:                100
+yap*comp_msg.fontList:              fixed
+yap*comp_msg*rows:                     20
+yap*comp_msg*columns:                 100
+yap*timer_area.background:          white
+

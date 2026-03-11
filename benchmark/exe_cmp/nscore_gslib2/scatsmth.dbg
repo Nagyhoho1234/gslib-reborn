@@ -1,0 +1,224 @@
+
+
+ SCATSMTH: smoothed values in x:   100
+
+ SCATSMTH: smoothed values in y:   100
+
+ SCATSMTH: data values:            131
+           slope:                   0.8275006
+           intercept:               1.0655234
+
+ slope for smoothing window:    0.2152256
+
+
+ Smoothing Window:  25 lag vectors with an 
+           Orientation =   12.15 and anis =  0.25000
+
+    lag number   1 X offset    0 Y offset   -1
+    lag number   2 X offset    0 Y offset    1
+    lag number   3 X offset    0 Y offset   -2
+    lag number   4 X offset    0 Y offset    2
+    lag number   5 X offset   -1 Y offset   -2
+    lag number   6 X offset    1 Y offset    2
+    lag number   7 X offset   -1 Y offset   -1
+    lag number   8 X offset    1 Y offset    1
+    lag number   9 X offset   -1 Y offset   -3
+    lag number  10 X offset    1 Y offset    3
+    lag number  11 X offset    0 Y offset   -3
+    lag number  12 X offset    0 Y offset    3
+    lag number  13 X offset   -1 Y offset    0
+    lag number  14 X offset    1 Y offset    0
+    lag number  15 X offset   -1 Y offset   -4
+    lag number  16 X offset    1 Y offset    4
+    lag number  17 X offset   -1 Y offset    1
+    lag number  18 X offset    1 Y offset   -1
+    lag number  19 X offset   -1 Y offset   -5
+    lag number  20 X offset    1 Y offset    5
+    lag number  21 X offset    0 Y offset   -4
+    lag number  22 X offset    0 Y offset    4
+    lag number  23 X offset   -1 Y offset    2
+    lag number  24 X offset    1 Y offset   -2
+    lag number  25 X offset   -1 Y offset   -6
+
+ Number of non-zero probabilities   10000
+ Number of possibilities            10000
+
+ Marginal mismatch :     0.000074
+
+ Actual correlation:     0.002837 target is     0.968913
+
+ Measure of smoothness =  0.000036057
+
+ Measure of mismatch for biv histo =       0.0007
+
+
+
+
+ SCATSMTH: maxpert, report, and omin:  1500000   10000 0.000100
+ Status at         1 m= 1.00000 c= 1.00000 s= 1.00000 b= 1.00000
+ Status at     10000 m= 1.04701 c= 0.83028 s= 0.92521 b= 0.98157
+ Status at     20000 m= 1.27191 c= 0.73636 s= 0.85609 b= 0.96297
+ Status at     30000 m= 1.48621 c= 0.67723 s= 0.79852 b= 0.94589
+ Status at     40000 m= 1.58296 c= 0.63873 s= 0.75489 b= 0.92953
+ Status at     50000 m= 1.67736 c= 0.61060 s= 0.71953 b= 0.91495
+ Status at     60000 m= 1.62397 c= 0.59467 s= 0.69706 b= 0.90091
+ Status at     70000 m= 1.62371 c= 0.57772 s= 0.68173 b= 0.88430
+ Status at     80000 m= 1.63206 c= 0.55731 s= 0.66870 b= 0.86973
+ Status at     90000 m= 1.58416 c= 0.54147 s= 0.65949 b= 0.85462
+ Status at    100000 m= 1.57415 c= 0.52502 s= 0.65185 b= 0.84017
+ Status at    110000 m= 1.52535 c= 0.51254 s= 0.65012 b= 0.82505
+ Status at    120000 m= 1.54252 c= 0.49661 s= 0.65553 b= 0.80821
+ Status at    130000 m= 1.54362 c= 0.48089 s= 0.65434 b= 0.79429
+ Status at    140000 m= 1.52750 c= 0.46571 s= 0.65612 b= 0.78067
+ Status at    150000 m= 1.55984 c= 0.45072 s= 0.67037 b= 0.76461
+ Status at    160000 m= 1.53521 c= 0.43699 s= 0.67809 b= 0.75119
+ Status at    170000 m= 1.56116 c= 0.42467 s= 0.68660 b= 0.73615
+ Status at    180000 m= 1.58543 c= 0.41288 s= 0.69951 b= 0.72149
+ Status at    190000 m= 1.64396 c= 0.39928 s= 0.70516 b= 0.70614
+ Status at    200000 m= 1.66683 c= 0.38700 s= 0.71431 b= 0.69262
+ Status at    210000 m= 1.70601 c= 0.37663 s= 0.72619 b= 0.67804
+ Status at    220000 m= 1.75948 c= 0.36625 s= 0.73293 b= 0.66408
+ Status at    230000 m= 1.79814 c= 0.35496 s= 0.73261 b= 0.65293
+ Status at    240000 m= 1.84732 c= 0.34519 s= 0.73889 b= 0.63981
+ Status at    250000 m= 1.89761 c= 0.33515 s= 0.74506 b= 0.62844
+ Status at    260000 m= 1.95246 c= 0.32661 s= 0.74886 b= 0.61722
+ Status at    270000 m= 2.02334 c= 0.31603 s= 0.75663 b= 0.60463
+ Status at    280000 m= 2.09546 c= 0.30718 s= 0.75786 b= 0.59322
+ Status at    290000 m= 2.10702 c= 0.29874 s= 0.74939 b= 0.58469
+ Status at    300000 m= 2.16938 c= 0.28944 s= 0.74642 b= 0.57525
+ Status at    310000 m= 2.20815 c= 0.28166 s= 0.74302 b= 0.56589
+ Status at    320000 m= 2.28604 c= 0.27372 s= 0.74315 b= 0.55660
+ Status at    330000 m= 2.36786 c= 0.26722 s= 0.74335 b= 0.54716
+ Status at    340000 m= 2.48965 c= 0.26143 s= 0.73722 b= 0.53772
+ Status at    350000 m= 2.57767 c= 0.25526 s= 0.73220 b= 0.52846
+ Status at    360000 m= 2.66809 c= 0.24892 s= 0.72813 b= 0.52015
+ Status at    370000 m= 2.66480 c= 0.24248 s= 0.71529 b= 0.51451
+ Status at    380000 m= 2.71168 c= 0.23740 s= 0.70841 b= 0.50805
+ Status at    390000 m= 2.74947 c= 0.23085 s= 0.69611 b= 0.50233
+ Status at    400000 m= 2.81092 c= 0.22587 s= 0.68338 b= 0.49599
+ Status at    410000 m= 2.90627 c= 0.22189 s= 0.66777 b= 0.48930
+ Status at    420000 m= 2.98330 c= 0.21791 s= 0.65109 b= 0.48307
+ Status at    430000 m= 3.04712 c= 0.21307 s= 0.63465 b= 0.47712
+ Status at    440000 m= 3.09247 c= 0.20894 s= 0.62686 b= 0.47223
+ Status at    450000 m= 3.19271 c= 0.20488 s= 0.61523 b= 0.46666
+ Status at    460000 m= 3.22476 c= 0.20109 s= 0.60473 b= 0.46225
+ Status at    470000 m= 3.37520 c= 0.19843 s= 0.59245 b= 0.45592
+ Status at    480000 m= 3.41197 c= 0.19462 s= 0.57860 b= 0.45114
+ Status at    490000 m= 3.41157 c= 0.19086 s= 0.57088 b= 0.44760
+ Status at    500000 m= 3.42534 c= 0.18706 s= 0.55552 b= 0.44429
+ Status at    510000 m= 3.55462 c= 0.18351 s= 0.54381 b= 0.43862
+ Status at    520000 m= 3.60025 c= 0.18078 s= 0.53402 b= 0.43485
+ Status at    530000 m= 3.67654 c= 0.17823 s= 0.52672 b= 0.43070
+ Status at    540000 m= 3.77945 c= 0.17606 s= 0.51298 b= 0.42658
+ Status at    550000 m= 3.75193 c= 0.17273 s= 0.50498 b= 0.42474
+ Status at    560000 m= 3.81234 c= 0.17029 s= 0.49229 b= 0.42132
+ Status at    570000 m= 3.77579 c= 0.16785 s= 0.48058 b= 0.42002
+ Status at    580000 m= 3.83211 c= 0.16512 s= 0.47443 b= 0.41726
+ Status at    590000 m= 3.95424 c= 0.16349 s= 0.45865 b= 0.41332
+ Status at    600000 m= 3.96516 c= 0.16119 s= 0.44526 b= 0.41138
+ Status at    610000 m= 4.06273 c= 0.15930 s= 0.43686 b= 0.40805
+ Status at    620000 m= 4.06369 c= 0.15778 s= 0.42514 b= 0.40616
+ Status at    630000 m= 4.11136 c= 0.15605 s= 0.41696 b= 0.40364
+ Status at    640000 m= 4.18999 c= 0.15421 s= 0.40617 b= 0.40073
+ Status at    650000 m= 4.17781 c= 0.15227 s= 0.39790 b= 0.39944
+ Status at    660000 m= 4.14690 c= 0.14998 s= 0.38787 b= 0.39857
+ Status at    670000 m= 4.19466 c= 0.14890 s= 0.38060 b= 0.39668
+ Status at    680000 m= 4.27891 c= 0.14779 s= 0.37804 b= 0.39425
+ Status at    690000 m= 4.32110 c= 0.14640 s= 0.37001 b= 0.39245
+ Status at    700000 m= 4.36875 c= 0.14512 s= 0.35910 b= 0.39064
+ Status at    710000 m= 4.39713 c= 0.14361 s= 0.34599 b= 0.38939
+ Status at    720000 m= 4.48016 c= 0.14258 s= 0.34001 b= 0.38713
+ Status at    730000 m= 4.52182 c= 0.14118 s= 0.33244 b= 0.38555
+ Status at    740000 m= 4.61320 c= 0.14084 s= 0.32368 b= 0.38307
+ Status at    750000 m= 4.56844 c= 0.13933 s= 0.31712 b= 0.38276
+ Status at    760000 m= 4.61234 c= 0.13820 s= 0.30612 b= 0.38130
+ Status at    770000 m= 4.61628 c= 0.13698 s= 0.30009 b= 0.38017
+ Status at    780000 m= 4.64397 c= 0.13603 s= 0.29332 b= 0.37921
+ Status at    790000 m= 4.69297 c= 0.13528 s= 0.28684 b= 0.37768
+ Status at    800000 m= 4.69588 c= 0.13455 s= 0.28192 b= 0.37706
+ Status at    810000 m= 4.71873 c= 0.13362 s= 0.27257 b= 0.37609
+ Status at    820000 m= 4.74007 c= 0.13270 s= 0.26723 b= 0.37544
+ Status at    830000 m= 4.76731 c= 0.13193 s= 0.25979 b= 0.37436
+ Status at    840000 m= 4.76664 c= 0.13099 s= 0.25645 b= 0.37381
+ Status at    850000 m= 4.83257 c= 0.13066 s= 0.24937 b= 0.37241
+ Status at    860000 m= 4.86972 c= 0.13027 s= 0.24405 b= 0.37137
+ Status at    870000 m= 4.86115 c= 0.12942 s= 0.24080 b= 0.37095
+ Status at    880000 m= 4.86625 c= 0.12905 s= 0.23789 b= 0.37032
+ Status at    890000 m= 4.90650 c= 0.12883 s= 0.23608 b= 0.36941
+ Status at    900000 m= 4.89642 c= 0.12810 s= 0.23145 b= 0.36920
+ Status at    910000 m= 4.93478 c= 0.12771 s= 0.22552 b= 0.36848
+ Status at    920000 m= 4.94775 c= 0.12704 s= 0.22355 b= 0.36792
+ Status at    930000 m= 4.97455 c= 0.12675 s= 0.21796 b= 0.36720
+ Status at    940000 m= 5.03818 c= 0.12638 s= 0.21359 b= 0.36606
+ Status at    950000 m= 5.04548 c= 0.12601 s= 0.20845 b= 0.36561
+ Status at    960000 m= 5.01708 c= 0.12541 s= 0.20369 b= 0.36568
+ Status at    970000 m= 5.05969 c= 0.12526 s= 0.19830 b= 0.36486
+ Status at    980000 m= 5.05983 c= 0.12460 s= 0.19426 b= 0.36459
+ Status at    990000 m= 5.06640 c= 0.12435 s= 0.19085 b= 0.36423
+ Status at   1000000 m= 5.09024 c= 0.12418 s= 0.18562 b= 0.36361
+ Status at   1010000 m= 5.18183 c= 0.12404 s= 0.18303 b= 0.36225
+ Status at   1020000 m= 5.16817 c= 0.12363 s= 0.18157 b= 0.36213
+ Status at   1030000 m= 5.16563 c= 0.12344 s= 0.17905 b= 0.36183
+ Status at   1040000 m= 5.16106 c= 0.12309 s= 0.17734 b= 0.36167
+ Status at   1050000 m= 5.16571 c= 0.12266 s= 0.17544 b= 0.36137
+ Status at   1060000 m= 5.19929 c= 0.12246 s= 0.17281 b= 0.36073
+ Status at   1070000 m= 5.21685 c= 0.12218 s= 0.17157 b= 0.36035
+ Status at   1080000 m= 5.23704 c= 0.12187 s= 0.16855 b= 0.35993
+ Status at   1090000 m= 5.24962 c= 0.12153 s= 0.16544 b= 0.35961
+ Status at   1100000 m= 5.27485 c= 0.12106 s= 0.16435 b= 0.35925
+ Status at   1110000 m= 5.24266 c= 0.12061 s= 0.16349 b= 0.35945
+ Status at   1120000 m= 5.28592 c= 0.12038 s= 0.16240 b= 0.35881
+ Status at   1130000 m= 5.29802 c= 0.12030 s= 0.16171 b= 0.35855
+ Status at   1140000 m= 5.26848 c= 0.11999 s= 0.16011 b= 0.35875
+ Status at   1150000 m= 5.27751 c= 0.11982 s= 0.15927 b= 0.35855
+ Status at   1160000 m= 5.28498 c= 0.11959 s= 0.15838 b= 0.35838
+ Status at   1170000 m= 5.26359 c= 0.11929 s= 0.15654 b= 0.35853
+ Status at   1180000 m= 5.26226 c= 0.11915 s= 0.15409 b= 0.35842
+ Status at   1190000 m= 5.30565 c= 0.11906 s= 0.15330 b= 0.35782
+ Status at   1200000 m= 5.31911 c= 0.11903 s= 0.15315 b= 0.35758
+ Status at   1210000 m= 5.35556 c= 0.11909 s= 0.15271 b= 0.35705
+ Status at   1220000 m= 5.30269 c= 0.11868 s= 0.15251 b= 0.35755
+ Status at   1230000 m= 5.31025 c= 0.11855 s= 0.15168 b= 0.35745
+ Status at   1240000 m= 5.30413 c= 0.11834 s= 0.15174 b= 0.35738
+ Status at   1250000 m= 5.30482 c= 0.11830 s= 0.15078 b= 0.35735
+ Status at   1260000 m= 5.30237 c= 0.11813 s= 0.15034 b= 0.35737
+ Status at   1270000 m= 5.29092 c= 0.11801 s= 0.15011 b= 0.35746
+ Status at   1280000 m= 5.26025 c= 0.11777 s= 0.14983 b= 0.35776
+ Status at   1290000 m= 5.26168 c= 0.11784 s= 0.14953 b= 0.35772
+ Status at   1300000 m= 5.27264 c= 0.11785 s= 0.14951 b= 0.35751
+ Status at   1310000 m= 5.27899 c= 0.11784 s= 0.14950 b= 0.35739
+ Status at   1320000 m= 5.28165 c= 0.11788 s= 0.14925 b= 0.35730
+ Status at   1330000 m= 5.28458 c= 0.11782 s= 0.14908 b= 0.35720
+ Status at   1340000 m= 5.27691 c= 0.11770 s= 0.14863 b= 0.35725
+ Status at   1350000 m= 5.27418 c= 0.11772 s= 0.14846 b= 0.35724
+ Status at   1360000 m= 5.27211 c= 0.11771 s= 0.14836 b= 0.35723
+ Status at   1370000 m= 5.27856 c= 0.11772 s= 0.14809 b= 0.35716
+ Status at   1380000 m= 5.27768 c= 0.11770 s= 0.14783 b= 0.35716
+ Status at   1390000 m= 5.27252 c= 0.11762 s= 0.14715 b= 0.35718
+ Status at   1400000 m= 5.29593 c= 0.11754 s= 0.14662 b= 0.35690
+ Status at   1410000 m= 5.29578 c= 0.11738 s= 0.14653 b= 0.35688
+ Status at   1420000 m= 5.29039 c= 0.11746 s= 0.14580 b= 0.35694
+ Status at   1430000 m= 5.30616 c= 0.11745 s= 0.14456 b= 0.35670
+ Status at   1440000 m= 5.31068 c= 0.11736 s= 0.14446 b= 0.35664
+ Status at   1450000 m= 5.29672 c= 0.11725 s= 0.14291 b= 0.35677
+ Status at   1460000 m= 5.30399 c= 0.11713 s= 0.14246 b= 0.35669
+ Status at   1470000 m= 5.29963 c= 0.11708 s= 0.14220 b= 0.35670
+ Status at   1480000 m= 5.29504 c= 0.11698 s= 0.14218 b= 0.35673
+ Status at   1490000 m= 5.30514 c= 0.11700 s= 0.14173 b= 0.35659
+ Status at   1500000 m= 5.31428 c= 0.11698 s= 0.14181 b= 0.35645
+ Status at   1500001 m= 5.31428 c= 0.11698 s= 0.14181 b= 0.35645
+
+ Marginal mismatch :     0.000395
+
+ Actual correlation:     0.638488 target is     0.968913
+
+ Measure of smoothness =  0.000005166
+
+ Measure of mismatch for biv histo =       0.0003
+
+
+
+ Status at   1500001 m= 5.31471 c= 0.11698 s= 0.14329 b= 0.35645
+
+Final Statistics from SCATSMTH
+   X mean and variance   :       9.5117     32.5497   Y mean and variance   :       9.5141     32.1071   correlation coefficint:       0.6659

@@ -1,0 +1,28 @@
+How to extract the source codes
+------------------------------
+
+The source codes for program IKSIM are stored in file iksim.tar
+in tar format. To extract them, run (assume you are using UNIX system):
+
+tar xvf iksim.tar 
+
+
+How to generate the executable code
+----------------------------------
+If your UNIX has a fortran77 compilor, just run:
+
+make
+
+and an executable file "iksim" will be generated in current directory.
+
+Note: in order to compile this program, the GSLIB library file
+"../gslib/libgs.a" must exist, which is downloadable from web site:
+http://ekofisk.stanford.edu/SCRF.html 
+For information regarding how to install the GSLIB, see
+Deutsch&Journel's book: GSLIB: Geostatistical Software Library and
+User's Guide, Appendix B, Oxford Univ. Press, 1998.
+
+Other files in iksim.tar
+----------------------------
+A sample parameter file iksim.par and a data file iksim-eq.dat are
+also included in iksim.tar.

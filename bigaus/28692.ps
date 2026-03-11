@@ -1,0 +1,269 @@
+%!PS-Adobe-1.0
+%%DocumentFonts: Courier
+%%Dimensions: 8.5 x 11 (in) 
+%%Margins: (l,t,r,b) 0.35, 1.13, 0.35, 0.35 (in) 
+%%Title: /usr/lib/print/lptops -FC -G -P10pt bigaus.par
+%%CreationDate: Wed Nov  1 10:59:17 1995
+%%Creator: clayton
+%%Pages: (atend)
+%%EndComments
+save
+/ISOLatin1Encoding where {pop save true}{false} ifelse
+/ISOLatin1Encoding [
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+    /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+    /.notdef /.notdef /space /exclam /quotedbl /numbersign
+    /dollar /percent /ampersand /quoteright /parenleft
+    /parenright /asterisk /plus /comma /minus /period
+    /slash /zero /one /two /three /four /five /six /seven
+    /eight /nine /colon /semicolon /less /equal /greater
+    /question /at /A /B /C /D /E /F /G /H /I /J /K /L /M
+    /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft
+    /backslash /bracketright /asciicircum /underscore
+    /quoteleft /a /b /c /d /e /f /g /h /i /j /k /l /m
+    /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft
+    /bar /braceright /asciitilde /guilsinglright /fraction
+    /florin /quotesingle /quotedblleft /guilsinglleft /fi
+    /fl /endash /dagger /daggerdbl /bullet /quotesinglbase
+    /quotedblbase /quotedblright /ellipsis /trademark
+    /perthousand /grave /scaron /circumflex /Scaron /tilde
+    /breve /zcaron /dotaccent /dotlessi /Zcaron /ring
+    /hungarumlaut /ogonek /caron /emdash /space /exclamdown
+    /cent /sterling /currency /yen /brokenbar /section
+    /dieresis /copyright /ordfeminine /guillemotleft
+    /logicalnot /hyphen /registered /macron /degree
+    /plusminus /twosuperior /threesuperior /acute /mu
+    /paragraph /periodcentered /cedilla /onesuperior
+    /ordmasculine /guillemotright /onequarter /onehalf
+    /threequarters /questiondown /Agrave /Aacute
+    /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+    /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute
+    /Icircumflex /Idieresis /Eth /Ntilde /Ograve /Oacute
+    /Ocircumflex /Otilde /Odieresis /multiply /Oslash
+    /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn
+    /germandbls /agrave /aacute /acircumflex /atilde
+    /adieresis /aring /ae /ccedilla /egrave /eacute
+    /ecircumflex /edieresis /igrave /iacute /icircumflex
+    /idieresis /eth /ntilde /ograve /oacute /ocircumflex
+    /otilde /odieresis /divide /oslash /ugrave /uacute
+    /ucircumflex /udieresis /yacute /thorn /ydieresis
+] def {restore} if
+/UD { dup stringwidth pop
+    /under_width exch def
+    show
+    under_width neg 0 rmoveto
+    (_) show } def
+/SL { gsave } def
+/LN { show } def
+
+% ----------------------------------
+% Gaudy Definitions ----------------
+% ----------------------------------
+
+/QSU { 100000 mul 72 div } def
+/DateFont {
+    findfont 16 QSU scalefont setfont
+} def
+/PageNoFont {
+    findfont 30 QSU scalefont setfont
+} def
+/TitleFont {
+    findfont 20 QSU scalefont setfont
+} def
+
+% Format : <gray_level> <left> <bottom> <width> <height> Rectangle
+/Rectangle
+{
+    /height exch def
+    /width exch def
+    /bottom exch def
+    /left exch def
+    /gray exch def
+    gray setgray
+    newpath
+    left bottom moveto
+    0 height rlineto
+    width 0 rlineto
+    0 height neg rlineto
+    closepath
+} bind def
+% Format : <gray_level> <left> <bottom> <width> <height> RoundRectangle
+/RoundRectangle
+{
+    /height exch def
+    /width exch def
+    /bottom exch def
+    /left exch def
+    /gray exch def
+    /fourpops { 4 {pop} repeat } def
+    /radius 18 QSU def
+    gray setgray
+    gsave
+        left bottom translate
+        newpath
+        0 radius moveto
+        0 height width height radius arcto fourpops
+        width height width 0 radius arcto fourpops
+        width 0 0 0 radius arcto fourpops
+        0 0 0 height radius arcto fourpops
+        fill
+    grestore
+} bind def
+% Format : <gray> <bounding_width> <bounding_height> <string> CentreString
+/CentreString {
+    /str exch def
+    /ht  exch def
+    /wd  exch def
+    /gray  exch def
+    gsave
+        gray 0 0 wd ht Rectangle clip
+        str dup
+        wd exch
+        stringwidth ht 
+        sub abs 2 div 2 div
+        3 1 roll 
+        sub abs 2 div
+        exch moveto
+        show
+    grestore
+} bind def
+
+/GaudyHeader {
+    /Page  exch def
+    /landscape  exch def
+    /hdrHt 50 QSU def
+    /leftWd 72 QSU def
+    /Offset 2 QSU def
+    newpath clippath pathbbox   % Get imageable area in the current units
+    /URy exch def
+    /URx exch def
+    /LLy exch def
+    /LLx exch def
+    landscape 1 eq
+    { LLx URy translate -90 rotate } if
+    newpath clippath pathbbox   % Get imageable area in the current units
+    /URy exch def
+    /URx exch def
+    /LLy exch def
+    /LLx exch def
+    /TM URy Offset sub def
+    /BM LLy Offset add def
+    /LM LLx Offset add def
+    /RM URx Offset sub def
+    gsave
+        /Times-Bold DateFont
+        LM TM hdrHt sub abs translate
+        .8 0 0 leftWd hdrHt RoundRectangle 
+        0 setgray
+        7 QSU 30 QSU moveto
+        Date show
+        7 QSU 10 QSU moveto
+        Time show
+        gsave
+            /Times-Bold PageNoFont
+            RM LM sub leftWd sub abs 0 translate
+            .8 0 0 leftWd hdrHt RoundRectangle 
+            0 leftWd hdrHt Page CentreString
+        grestore
+        gsave
+            /Helvetica-Bold TitleFont
+            /InnerWd { RM LM sub leftWd 2 mul sub abs } def
+            /CBar 30 QSU def
+            leftWd 10 QSU translate
+            .9 0 0 InnerWd CBar RoundRectangle 
+            0 InnerWd CBar Title CentreString
+        grestore
+    grestore
+} bind def
+
+
+%%EndProlog
+/Date  (11/01/95) def 
+/Time  (10:59:17) def 
+%%Page: 1 1
+/Title (bigaus.par) def 
+/EL { grestore 0 -14390 rmoveto } def
+save
+/O {gsave show grestore} def
+/reencodeISO {
+    dup length dict begin
+        {1 index /FID ne {def}{pop pop} ifelse} forall
+        /Encoding ISOLatin1Encoding def
+        currentdict
+    end
+} def
+/findISO {
+    dup /FontType known {
+        dup /FontType get 3 ne {
+            dup /CharStrings known {
+                dup /CharStrings get /Thorn known {
+                    true
+                }{ false } ifelse
+            }{ false } ifelse
+        }{ false } ifelse
+    }{ false } ifelse
+} def
+/N {/Courier findfont findISO { reencodeISO /Courier-ISO exch definefont
+    13837 scalefont setfont }
+    { 13837 scalefont setfont } ifelse 
+} def
+72 100000 div 72 100000 div scale
+N()pop
+gsave 
+0 (1) GaudyHeader 
+grestore 
+gsave
+0 35000 35000 768858 952223 Rectangle clip 
+46142 976431 moveto
+SL
+(                     Parameters for BIGAUS)LN
+EL
+SL
+(                     *********************)LN
+EL
+SL
+( )LN
+EL
+SL
+(START OF PARAMETERS:)LN
+EL
+SL
+(bigaus.out                        \\file for output of variograms)LN
+EL
+SL
+(3                                 \\number of thresholds)LN
+EL
+SL
+(0.25   0.50    0.75               \\threshold cdf values)LN
+EL
+SL
+(1   20                            \\number of directions and lags)LN
+EL
+SL
+( 0.0   0.0    1.0                 \\azm\(1\), dip\(1\), lag\(1\))LN
+EL
+SL
+(2    0.2                          \\nst, nugget effect)LN
+EL
+SL
+(1    0.4  0.0   0.0   0.0         \\it,cc,ang1,ang2,ang3)LN
+EL
+SL
+(         10.0   5.0  10.0         \\a_hmax, a_hmin, a_vert)LN
+EL
+SL
+(1    0.4  0.0   0.0   0.0         \\it,cc,ang1,ang2,ang3)LN
+EL
+SL
+(         10.0   5.0  10.0         \\a_hmax, a_hmin, a_vert)LN
+EL
+grestore
+/#copies 1 def showpage
+restore
+%%Trailer
+restore
+%%Pages: 1
+%PageTable:  1 1 5751 2 2 5751

@@ -1,0 +1,43 @@
+#!/bin/sh
+
+bad=0
+cFile=yaconfig.h
+
+checkFILEexists()
+{
+	if [ ! -r $FILE ]; then
+		echo $FILENAME $FILE does not exist
+		exit 1
+	else
+		echo Found $FILE
+	fi
+}
+
+checkKEYWORDpresent()
+{
+	if [ ! `grep "^#define" $cFile | grep -c $KEYWORD` -eq 1 ]; then
+		echo Could not find definition for $KEYWORD in $cFile
+		bad=1
+	else
+		echo Found keyword $KEYWORD
+		FILE=`grep "^#define" $cFile |\
+			grep $KEYWORD | awk '{print $3}' | sed 's/\"//g'`
+		checkFILEexists
+	fi
+}
+
+echo "Checking your $cFile file"
+echo ""
+F="-r"; FILE=$cFile;        FILENAME="Configuration file"; checkFILEexists
+F="-r"; KEYWORD=_HELP_FILE; FILENAME="Help file";          checkKEYWORDpresent
+F="-d"; KEYWORD=_CMAP_DIR;  FILENAME="Cmap directory";     checkKEYWORDpresent
+F="-r"; KEYWORD=_CMAP_DEF;  FILENAME="Default cmap file";  checkKEYWORDpresent
+
+echo ""
+if [ $bad -eq 0 ]; then
+	echo Everything seems fine
+else
+	echo Please check your $co file. Stopping compilation
+	exit 1
+fi
+ 

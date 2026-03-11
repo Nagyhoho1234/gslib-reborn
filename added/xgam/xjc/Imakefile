@@ -1,0 +1,12 @@
+
+SRCS = xcolor.c xcursor.c xio.c xmisc.c \
+	   xgraph.c xprint.c xwidget.c xhelp.c WidgetWrap.c motifutils.c
+# xcolor_edit.c
+OBJS = $(SRCS:.c=.o)
+INCLUDES = -I. -I../include
+
+all::
+	NormalLibraryObjectRule()
+
+NormalLibraryTarget(Xjc,$(OBJS))
+

@@ -1,0 +1,14 @@
+                   Parameters for ELLIPSIM
+                   ***********************
+ 
+START OF PARAMETERS:
+ellipsim.out               \file for output realizations
+1                          \number of realizations
+120  0. 0.25               \nx,xmn,xsiz
+120  0. 0.25               \ny,ymn,ysiz
+1    0. 1.0                \nz,zmn,zsiz
+69069                      \random number seed
+0.25                       \target proportion (in ellipsoids)
+  2.0   4.0   1.0  0.0 0.0 0.0   1.0 \radius[1,2,3],angle[1,2,3],weight
+  2.0   2.0   1.0  0.0 0.0 0.0   1.0 \radius[1,2,3],angle[1,2,3],weight
+  1.0   1.0   1.0  0.0 0.0 0.0   1.0 \radius[1,2,3],angle[1,2,3],weight

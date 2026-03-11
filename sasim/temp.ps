@@ -1,0 +1,152 @@
+%!PS
+/m {moveto} def
+/l {lineto} def
+/r {rlineto} def
+/s {stroke} def
+/n {newpath} def
+/c {closepath} def
+2 setlinejoin 
+/rtext{ dup stringwidth pop -1 div 0  rmoveto show } def
+/ltext{show} def
+/ctext{ dup stringwidth pop -2 div 0  rmoveto show } def
+/bullet{ 6 0 360 arc c fill } def
+%
+% STARTING A NEW PAGE:
+0.24 0.24 scale
+ 0.000 setlinewidth
+n
+0300 3029 m
+0300 3091 l
+2400 3091 l
+2400 3029 l
+0300 3029 l
+c
+0.93 setgray
+fill
+0.0 setgray
+/Helvetica-BoldOblique findfont   50 scalefont setfont
+0333 3041 m
+(Parameter File:   sasim.par) ltext
+/Helvetica-Bold        findfont   41 scalefont setfont
+2366 3041 m
+(Wed Dec 27 11:14:05 1995) rtext
+ 4.167 setlinewidth
+n
+0300 0300 m
+0300 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 3000 m
+2250 3000 l
+s
+ 4.167 setlinewidth
+n
+2400 0300 m
+2400 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 0150 m
+2250 0150 l
+s
+ 4.167 setlinewidth newpath
+00450 02850 00150 00090 00180 arc s
+ 4.167 setlinewidth newpath
+02250 02850 00150 00000 00090 arc s
+ 4.167 setlinewidth newpath
+02250 00300 00150 00270 00360 arc s
+ 4.167 setlinewidth newpath
+00450 00300 00150 00180 00270 arc s
+/Courier               findfont   43 scalefont setfont
+0450 2940 m
+(              Simulated Annealing Based Simulation) ltext
+0450 2891 m
+(              ************************************) ltext
+0450 2747 m
+(START OF PARAMETERS:) ltext
+0450 2699 m
+(1  1  1  0  0                     \\components: hist,varg,ivar,corr,bivh) ltext
+0450 2651 m
+(1  1  1  1  1                     \\weight:     hist,varg,ivar,corr,bivh) ltext
+0450 2603 m
+(1                                 \\number of realizations) ltext
+0450 2555 m
+(50      0.5    1.0                \\grid definition: nx,xmn,xsiz) ltext
+0450 2506 m
+(50      0.5    1.0                \\                 ny,ymn,ysiz) ltext
+0450 2458 m
+( 1      0.5    1.0                \\                 nz,zmn,zsiz) ltext
+0450 2410 m
+(69069                             \\random number seed) ltext
+0450 2362 m
+(4                                 \\debugging level) ltext
+0450 2314 m
+(sasim.dbg                         \\file for debugging output) ltext
+0450 2266 m
+(sasim.out                         \\file for simulation output) ltext
+0450 2218 m
+(1                                 \\schedule \(0=automatic,1=set below\)) ltext
+0450 2170 m
+(0.0   0.05  10   3  5  0.001      \\   schedule: t0,redfac,ka,k,num,Omin) ltext
+0450 2121 m
+(10.0                              \\   maximum number of perturbations) ltext
+0450 2073 m
+( 0.1                              \\   reporting interval) ltext
+0450 2025 m
+(0                                 \\conditioning data:\(0=no, 1=yes\)) ltext
+0450 1977 m
+(../data/cluster.dat               \\   file with data) ltext
+0450 1929 m
+(1   2   0   3                     \\   columns: x,y,z,attribute) ltext
+0450 1881 m
+(-1.0e21    1.0e21                 \\   trimming limits) ltext
+0450 1833 m
+(1                                 \\file with histogram:\(0=no, 1=yes\)) ltext
+0450 1785 m
+(../data/cluster.dat               \\   file with histogram) ltext
+0450 1736 m
+(3   5                             \\   column for value and weight) ltext
+0450 1688 m
+(99                                \\   number of quantiles for obj. func.) ltext
+0450 1640 m
+(1                                 \\number of indicator variograms) ltext
+0450 1592 m
+(2.78                              \\   indicator thresholds) ltext
+0450 1544 m
+(../data/seisdat.dat               \\file with gridded secondary data) ltext
+0450 1496 m
+(1                                 \\   column number) ltext
+0450 1448 m
+(1                                 \\   vertical average \(0=no, 1=yes\)) ltext
+0450 1400 m
+(0.60                              \\correlation coefficient) ltext
+0450 1351 m
+(../data/cal.dat                   \\file with bivariate data) ltext
+0450 1303 m
+(2    1    0                       \\   columns for primary, secondary, wt) ltext
+0450 1255 m
+(-0.5    100.0                     \\   minimum and maximum) ltext
+0450 1207 m
+(5                                 \\   number of primary thresholds) ltext
+0450 1159 m
+(5                                 \\   number of secondary thresholds) ltext
+0450 1111 m
+(51                                \\Variograms: number of lags) ltext
+0450 1063 m
+(1                                 \\   standardize sill \(0=no,1=yes\)) ltext
+0450 1015 m
+(1    0.1                          \\   nst, nugget effect) ltext
+0450 0966 m
+(1    0.9  0.0   0.0   0.0         \\   it,cc,ang1,ang2,ang3) ltext
+0450 0918 m
+(         10.0  10.0  10.0         \\   a_hmax, a_hmin, a_vert) ltext
+0450 0870 m
+(1    0.1                          \\   nst, nugget effect) ltext
+0450 0822 m
+(1    0.9  0.0   0.0   0.0         \\   it,cc,ang1,ang2,ang3) ltext
+0450 0774 m
+(         10.0  10.0  10.0         \\   a_hmax, a_hmin, a_vert) ltext
+%END OF PAGE
+4.166667 4.166667 scale
+showpage

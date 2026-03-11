@@ -1,0 +1,18 @@
+Author: Xianlin Ma
+
+After  uncompressed  file xgam.tar.Z,   three seperate directories will
+be created:
+
+xjc ----------- library for xgam
+prog ---------- xgam source files
+yap17 --------- display 3D cube and 2D slice
+
+NOTE: GSLIB utility library is required to compile these programs.
+      the GSLIB library file libgs.a is assumed to reside in ../../gslib/
+
+To install xgam, type "./install", then the executive program will be
+found in prog directory. 
+
+After that, please append Xgam in prog directory and yap.ad in yap17 
+directory to your  ~/.Xdefaults and run "xrdb ~/.Xdefaults".
+   

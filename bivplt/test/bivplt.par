@@ -1,0 +1,14 @@
+                    Parameters for BIVPLT
+                    *********************
+ 
+START OF PARAMETERS:
+well_seis.dat             \file with data
+4   9   0                 \columns for x variable, y variable, and wt
+histsmth_poro.out         \file with smoothed X distribution
+histsmth_Lf.out           \file with smoothed Y distribution
+scatsmth.out              \file with smoothed bivariate distribution
+bivplt.ps                 \file for PostScript output
+0                         \number of contours (0 -> none)
+1   1                     \pixel map? (0=no, 1=yes), (0=B&W, 1=color)
+30                        \number of histogram classes (marginals)
+Caroline's Example Data   \Title

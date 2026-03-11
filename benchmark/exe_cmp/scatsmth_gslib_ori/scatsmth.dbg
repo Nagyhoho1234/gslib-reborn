@@ -1,0 +1,224 @@
+
+
+ SCATSMTH: smoothed values in x:   100
+
+ SCATSMTH: smoothed values in y:   100
+
+ SCATSMTH: data values:            131
+           slope:                    .8275006
+           intercept:               1.0655230
+
+ slope for smoothing window:     .2152262
+
+
+ Smoothing Window:  25 lag vectors with an 
+           Orientation =   12.15 and anis =   .25000
+
+    lag number   1 X offset    0 Y offset   -1
+    lag number   2 X offset    0 Y offset    1
+    lag number   3 X offset    0 Y offset   -2
+    lag number   4 X offset    0 Y offset    2
+    lag number   5 X offset   -1 Y offset   -2
+    lag number   6 X offset    1 Y offset    2
+    lag number   7 X offset   -1 Y offset   -1
+    lag number   8 X offset    1 Y offset    1
+    lag number   9 X offset   -1 Y offset   -3
+    lag number  10 X offset    1 Y offset    3
+    lag number  11 X offset    0 Y offset   -3
+    lag number  12 X offset    0 Y offset    3
+    lag number  13 X offset   -1 Y offset    0
+    lag number  14 X offset    1 Y offset    0
+    lag number  15 X offset   -1 Y offset   -4
+    lag number  16 X offset    1 Y offset    4
+    lag number  17 X offset   -1 Y offset    1
+    lag number  18 X offset    1 Y offset   -1
+    lag number  19 X offset   -1 Y offset   -5
+    lag number  20 X offset    1 Y offset    5
+    lag number  21 X offset    0 Y offset   -4
+    lag number  22 X offset    0 Y offset    4
+    lag number  23 X offset   -1 Y offset    2
+    lag number  24 X offset    1 Y offset   -2
+    lag number  25 X offset   -1 Y offset   -6
+
+ Number of non-zero probabilities   10000
+ Number of possibilities            10000
+
+ Marginal mismatch :      .000074
+
+ Actual correlation:      .002837 target is      .968913
+
+ Measure of smoothness =   .000036057
+
+ Measure of mismatch for biv histo =        .0007
+
+
+
+
+ SCATSMTH: maxpert, report, and omin:  1500000   10000  .000100
+ Status at         1 m= 1.00000 c= 1.00000 s= 1.00000 b= 1.00000
+ Status at     10000 m= 1.04758 c=  .83010 s=  .92555 b=  .98153
+ Status at     20000 m= 1.27487 c=  .73605 s=  .85647 b=  .96289
+ Status at     30000 m= 1.48900 c=  .67671 s=  .79921 b=  .94579
+ Status at     40000 m= 1.58471 c=  .63846 s=  .75552 b=  .92944
+ Status at     50000 m= 1.68260 c=  .61048 s=  .71970 b=  .91489
+ Status at     60000 m= 1.63849 c=  .59439 s=  .69721 b=  .90075
+ Status at     70000 m= 1.63563 c=  .57812 s=  .68268 b=  .88404
+ Status at     80000 m= 1.63944 c=  .55756 s=  .66997 b=  .86948
+ Status at     90000 m= 1.59523 c=  .54117 s=  .66086 b=  .85432
+ Status at    100000 m= 1.59134 c=  .52438 s=  .65365 b=  .83977
+ Status at    110000 m= 1.53788 c=  .51189 s=  .65172 b=  .82472
+ Status at    120000 m= 1.55197 c=  .49578 s=  .65817 b=  .80777
+ Status at    130000 m= 1.56591 c=  .47932 s=  .65756 b=  .79366
+ Status at    140000 m= 1.54085 c=  .46440 s=  .65900 b=  .78014
+ Status at    150000 m= 1.57327 c=  .44925 s=  .67307 b=  .76411
+ Status at    160000 m= 1.55197 c=  .43527 s=  .68131 b=  .75059
+ Status at    170000 m= 1.58407 c=  .42312 s=  .69206 b=  .73513
+ Status at    180000 m= 1.61650 c=  .41144 s=  .70624 b=  .72021
+ Status at    190000 m= 1.66773 c=  .39805 s=  .71279 b=  .70477
+ Status at    200000 m= 1.69056 c=  .38568 s=  .72298 b=  .69111
+ Status at    210000 m= 1.72905 c=  .37516 s=  .73334 b=  .67676
+ Status at    220000 m= 1.78752 c=  .36414 s=  .73917 b=  .66287
+ Status at    230000 m= 1.82683 c=  .35303 s=  .73775 b=  .65187
+ Status at    240000 m= 1.86181 c=  .34362 s=  .74340 b=  .63897
+ Status at    250000 m= 1.92371 c=  .33395 s=  .75094 b=  .62727
+ Status at    260000 m= 1.97880 c=  .32494 s=  .75380 b=  .61619
+ Status at    270000 m= 2.05438 c=  .31452 s=  .76191 b=  .60348
+ Status at    280000 m= 2.14235 c=  .30543 s=  .76458 b=  .59172
+ Status at    290000 m= 2.16299 c=  .29672 s=  .75630 b=  .58306
+ Status at    300000 m= 2.20466 c=  .28798 s=  .75158 b=  .57403
+ Status at    310000 m= 2.26729 c=  .27994 s=  .74965 b=  .56424
+ Status at    320000 m= 2.34575 c=  .27241 s=  .74832 b=  .55514
+ Status at    330000 m= 2.42180 c=  .26669 s=  .74977 b=  .54557
+ Status at    340000 m= 2.53998 c=  .26014 s=  .74310 b=  .53625
+ Status at    350000 m= 2.64902 c=  .25396 s=  .74003 b=  .52651
+ Status at    360000 m= 2.73416 c=  .24766 s=  .73428 b=  .51848
+ Status at    370000 m= 2.72119 c=  .24156 s=  .72153 b=  .51294
+ Status at    380000 m= 2.77922 c=  .23643 s=  .71650 b=  .50606
+ Status at    390000 m= 2.81375 c=  .22920 s=  .70309 b=  .50058
+ Status at    400000 m= 2.85405 c=  .22383 s=  .68963 b=  .49464
+ Status at    410000 m= 2.93585 c=  .22073 s=  .67293 b=  .48820
+ Status at    420000 m= 3.03647 c=  .21634 s=  .65599 b=  .48174
+ Status at    430000 m= 3.09711 c=  .21204 s=  .63965 b=  .47576
+ Status at    440000 m= 3.14716 c=  .20802 s=  .63187 b=  .47085
+ Status at    450000 m= 3.25416 c=  .20446 s=  .62020 b=  .46517
+ Status at    460000 m= 3.26604 c=  .20069 s=  .60833 b=  .46116
+ Status at    470000 m= 3.42951 c=  .19791 s=  .59751 b=  .45451
+ Status at    480000 m= 3.47938 c=  .19416 s=  .58381 b=  .44961
+ Status at    490000 m= 3.47634 c=  .19012 s=  .57492 b=  .44627
+ Status at    500000 m= 3.50654 c=  .18612 s=  .56046 b=  .44268
+ Status at    510000 m= 3.62118 c=  .18308 s=  .54736 b=  .43742
+ Status at    520000 m= 3.67542 c=  .18007 s=  .53761 b=  .43354
+ Status at    530000 m= 3.72374 c=  .17716 s=  .52820 b=  .43003
+ Status at    540000 m= 3.81762 c=  .17533 s=  .51479 b=  .42592
+ Status at    550000 m= 3.81111 c=  .17209 s=  .50772 b=  .42378
+ Status at    560000 m= 3.86297 c=  .16993 s=  .49422 b=  .42056
+ Status at    570000 m= 3.85552 c=  .16751 s=  .48345 b=  .41882
+ Status at    580000 m= 3.90288 c=  .16467 s=  .47751 b=  .41613
+ Status at    590000 m= 4.02482 c=  .16339 s=  .46187 b=  .41216
+ Status at    600000 m= 4.04972 c=  .16127 s=  .44971 b=  .40991
+ Status at    610000 m= 4.14226 c=  .15959 s=  .44169 b=  .40658
+ Status at    620000 m= 4.15997 c=  .15800 s=  .43123 b=  .40432
+ Status at    630000 m= 4.17071 c=  .15603 s=  .42006 b=  .40265
+ Status at    640000 m= 4.24952 c=  .15449 s=  .40809 b=  .39992
+ Status at    650000 m= 4.22514 c=  .15274 s=  .39962 b=  .39881
+ Status at    660000 m= 4.20437 c=  .15034 s=  .39022 b=  .39774
+ Status at    670000 m= 4.26329 c=  .14924 s=  .38382 b=  .39561
+ Status at    680000 m= 4.38603 c=  .14825 s=  .38229 b=  .39262
+ Status at    690000 m= 4.41305 c=  .14697 s=  .37416 b=  .39099
+ Status at    700000 m= 4.43645 c=  .14533 s=  .36242 b=  .38959
+ Status at    710000 m= 4.49066 c=  .14395 s=  .34964 b=  .38798
+ Status at    720000 m= 4.57339 c=  .14290 s=  .34294 b=  .38583
+ Status at    730000 m= 4.59271 c=  .14134 s=  .33499 b=  .38455
+ Status at    740000 m= 4.67909 c=  .14070 s=  .32610 b=  .38215
+ Status at    750000 m= 4.64071 c=  .13917 s=  .31929 b=  .38178
+ Status at    760000 m= 4.66781 c=  .13820 s=  .30876 b=  .38042
+ Status at    770000 m= 4.68477 c=  .13686 s=  .30252 b=  .37916
+ Status at    780000 m= 4.69228 c=  .13596 s=  .29581 b=  .37839
+ Status at    790000 m= 4.73992 c=  .13507 s=  .28878 b=  .37701
+ Status at    800000 m= 4.74681 c=  .13417 s=  .28403 b=  .37636
+ Status at    810000 m= 4.78507 c=  .13343 s=  .27474 b=  .37523
+ Status at    820000 m= 4.79427 c=  .13234 s=  .26995 b=  .37466
+ Status at    830000 m= 4.83859 c=  .13164 s=  .26242 b=  .37342
+ Status at    840000 m= 4.87873 c=  .13103 s=  .25932 b=  .37237
+ Status at    850000 m= 4.93323 c=  .13065 s=  .25191 b=  .37113
+ Status at    860000 m= 4.96814 c=  .13019 s=  .24699 b=  .37006
+ Status at    870000 m= 4.92795 c=  .12919 s=  .24317 b=  .37006
+ Status at    880000 m= 4.95778 c=  .12887 s=  .24008 b=  .36915
+ Status at    890000 m= 4.97355 c=  .12844 s=  .23811 b=  .36853
+ Status at    900000 m= 4.96312 c=  .12778 s=  .23392 b=  .36826
+ Status at    910000 m= 5.01014 c=  .12728 s=  .22854 b=  .36740
+ Status at    920000 m= 5.04987 c=  .12672 s=  .22633 b=  .36658
+ Status at    930000 m= 5.07111 c=  .12653 s=  .22039 b=  .36598
+ Status at    940000 m= 5.11661 c=  .12617 s=  .21614 b=  .36503
+ Status at    950000 m= 5.10639 c=  .12569 s=  .21081 b=  .36481
+ Status at    960000 m= 5.09876 c=  .12512 s=  .20636 b=  .36462
+ Status at    970000 m= 5.11591 c=  .12491 s=  .20063 b=  .36413
+ Status at    980000 m= 5.12837 c=  .12444 s=  .19699 b=  .36365
+ Status at    990000 m= 5.12103 c=  .12401 s=  .19322 b=  .36350
+ Status at   1000000 m= 5.13885 c=  .12402 s=  .18823 b=  .36291
+ Status at   1010000 m= 5.24390 c=  .12390 s=  .18576 b=  .36140
+ Status at   1020000 m= 5.23340 c=  .12347 s=  .18422 b=  .36124
+ Status at   1030000 m= 5.21898 c=  .12327 s=  .18143 b=  .36112
+ Status at   1040000 m= 5.24238 c=  .12308 s=  .17956 b=  .36067
+ Status at   1050000 m= 5.24728 c=  .12269 s=  .17789 b=  .36034
+ Status at   1060000 m= 5.29815 c=  .12242 s=  .17517 b=  .35954
+ Status at   1070000 m= 5.29553 c=  .12218 s=  .17392 b=  .35936
+ Status at   1080000 m= 5.31660 c=  .12194 s=  .17095 b=  .35894
+ Status at   1090000 m= 5.34982 c=  .12177 s=  .16760 b=  .35843
+ Status at   1100000 m= 5.33891 c=  .12141 s=  .16700 b=  .35840
+ Status at   1110000 m= 5.33049 c=  .12109 s=  .16580 b=  .35838
+ Status at   1120000 m= 5.34295 c=  .12090 s=  .16455 b=  .35809
+ Status at   1130000 m= 5.36214 c=  .12101 s=  .16360 b=  .35779
+ Status at   1140000 m= 5.31077 c=  .12056 s=  .16190 b=  .35823
+ Status at   1150000 m= 5.28554 c=  .12028 s=  .16066 b=  .35845
+ Status at   1160000 m= 5.29786 c=  .12011 s=  .15954 b=  .35826
+ Status at   1170000 m= 5.32601 c=  .11999 s=  .15854 b=  .35774
+ Status at   1180000 m= 5.34670 c=  .12012 s=  .15605 b=  .35738
+ Status at   1190000 m= 5.39261 c=  .12005 s=  .15534 b=  .35676
+ Status at   1200000 m= 5.38048 c=  .11965 s=  .15483 b=  .35686
+ Status at   1210000 m= 5.40355 c=  .11960 s=  .15444 b=  .35648
+ Status at   1220000 m= 5.38101 c=  .11941 s=  .15419 b=  .35664
+ Status at   1230000 m= 5.37867 c=  .11919 s=  .15335 b=  .35665
+ Status at   1240000 m= 5.38275 c=  .11900 s=  .15361 b=  .35644
+ Status at   1250000 m= 5.38309 c=  .11889 s=  .15267 b=  .35640
+ Status at   1260000 m= 5.36707 c=  .11875 s=  .15232 b=  .35656
+ Status at   1270000 m= 5.39109 c=  .11867 s=  .15238 b=  .35622
+ Status at   1280000 m= 5.36671 c=  .11852 s=  .15218 b=  .35643
+ Status at   1290000 m= 5.36817 c=  .11851 s=  .15206 b=  .35636
+ Status at   1300000 m= 5.36039 c=  .11838 s=  .15213 b=  .35636
+ Status at   1310000 m= 5.35895 c=  .11827 s=  .15190 b=  .35635
+ Status at   1320000 m= 5.37364 c=  .11826 s=  .15164 b=  .35612
+ Status at   1330000 m= 5.37640 c=  .11815 s=  .15144 b=  .35603
+ Status at   1340000 m= 5.36844 c=  .11808 s=  .15089 b=  .35609
+ Status at   1350000 m= 5.36429 c=  .11807 s=  .15061 b=  .35611
+ Status at   1360000 m= 5.36207 c=  .11807 s=  .15064 b=  .35608
+ Status at   1370000 m= 5.37225 c=  .11816 s=  .15049 b=  .35594
+ Status at   1380000 m= 5.36217 c=  .11814 s=  .15012 b=  .35605
+ Status at   1390000 m= 5.36906 c=  .11813 s=  .14963 b=  .35591
+ Status at   1400000 m= 5.38917 c=  .11809 s=  .14912 b=  .35568
+ Status at   1410000 m= 5.38420 c=  .11789 s=  .14887 b=  .35572
+ Status at   1420000 m= 5.38158 c=  .11783 s=  .14834 b=  .35573
+ Status at   1430000 m= 5.39910 c=  .11795 s=  .14715 b=  .35546
+ Status at   1440000 m= 5.38902 c=  .11781 s=  .14701 b=  .35556
+ Status at   1450000 m= 5.38400 c=  .11767 s=  .14545 b=  .35559
+ Status at   1460000 m= 5.38779 c=  .11765 s=  .14510 b=  .35553
+ Status at   1470000 m= 5.39971 c=  .11765 s=  .14492 b=  .35536
+ Status at   1480000 m= 5.39290 c=  .11761 s=  .14485 b=  .35542
+ Status at   1490000 m= 5.38595 c=  .11756 s=  .14434 b=  .35547
+ Status at   1500000 m= 5.38739 c=  .11745 s=  .14431 b=  .35543
+ Status at   1500001 m= 5.38739 c=  .11745 s=  .14431 b=  .35543
+
+ Marginal mismatch :      .000400
+
+ Actual correlation:      .637830 target is      .968913
+
+ Measure of smoothness =   .000005199
+
+ Measure of mismatch for biv histo =        .0003
+
+
+
+ Status at   1500001 m= 5.38824 c=  .11745 s=  .14420 b=  .35543
+
+   Final Statistics from SCATSMTH
+   X mean and variance   :       9.5090     32.5455   Y mean and variance   :       9.5103     32.0996   correlation coefficint:        .6654

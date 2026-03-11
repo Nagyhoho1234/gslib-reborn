@@ -1,0 +1,60 @@
+# Makefile to build yap
+# cpu:              DEC 3000 AXP/500
+# Operating system: OSF/1 1.2A
+# Tested on:        giono.stanford.edu, rimbaud.stanford.edu (geostat group)
+
+# define build flags
+CC       = cc
+INCLUDES = -I/usr/include/X11
+CFLAGS   = -O2 -DSYSV
+LDFLAGS  = -L/usr/lib/X11
+LIBS     = -lXm -lXt -lX11 /usr/lib/libXm.a -lm
+EXEDIR   = $(HOME)/bin
+# The following lines specifiy if we want the path definitions in yaconfig.h
+# to be checked. If the first line is commented, no check.
+CHECKCO  = checkconfig
+#CHECKCO  = @echo "No checking of yaconfig.h"
+
+OBJS     = ya2d.o yacmap.o yafile.o yaread.o yautils.o ya3d.o yacut.o yamain.o yasave.o yadebug.o yastat.o yacompute.o nxhelp.o
+
+.SUFFIXES: .o .c
+
+# Define rules
+.c.o:
+	@echo "________ Compiling $< to obj ________"
+	$(CC) -c $(CFLAGS) $(INCLUDES) $<
+
+yap: check $(OBJS)
+	@echo "________ Linkink yap ________"
+	$(CC) -o $@ $(OBJS) $(CFLAGS) $(LDFLAGS) $< $(LIBS)
+
+install: yap gsl2fbin gsl2cbin
+	mv yap $(EXEDIR)
+	mv gsl2fbin $(EXEDIR)
+	mv gsl2cbin $(EXEDIR)
+
+check: yaconfig.h
+	$(CHECKCO)
+
+gsl2fbin: gsl2bin.c
+	$(CC) gsl2bin.c -o gsl2fbin -DFMT=1 -lm
+
+gsl2cbin: gsl2bin.c
+	$(CC) gsl2bin.c -o gsl2cbin -DFMT=2 -lm
+
+clean:
+	rm -f $(OBJS) yap
+
+nxhelp.o:    NXHelp.h NXHelp.icn
+ya2d.o:      yap.h yaconfig.h
+ya3d.o:      yap.h yaconfig.h
+yacmap.o:    yap.h yaconfig.h
+yacompute.o: yap.h yaconfig.h
+yacut.o:     yap.h
+yadebug.o:   yap.h yaconfig.h
+yafile.o:    yap.h
+yamain.o:    yap.h yaconfig.h yaicon.h NXHelp.h
+yaread.o:    yap.h yaconfig.h
+yasave.o:    yap.h
+yastat.o:    yap.h yaconfig.h
+yautils.o:   yap.h yaconfig.h

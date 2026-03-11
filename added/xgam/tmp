@@ -1,0 +1,20 @@
+`xgam' is up to date.
+f77 -c -g gam.f
+f77 -o gam gam.o ../gslib/libgs.a
+ld:
+Can't open: ../gslib/libgs.a (No such file or directory)
+f77: Severe: Failed while trying to link.
+*** Exit 1
+Stop.
+f77 -c -g varmap.f
+f77 -o varmap varmap.o ../gslib/libgs.a
+ld:
+Can't open: ../gslib/libgs.a (No such file or directory)
+f77: Severe: Failed while trying to link.
+*** Exit 1
+Stop.
+________ Compiling ya2d.c to obj ________
+gcc -c -O2 -DSYSV -I/usr/include/X11 ya2d.c
+gcc: No such file or directory
+*** Exit 1
+Stop.

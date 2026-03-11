@@ -1,0 +1,17 @@
+!
+! Yap 1.5 Application defaults file
+!
+
+yap*stat_win*height:                  400
+yap*stat_win*width:                   400
+yap*main_win.height:                  700
+yap*main_win.width:                   900
+yap*twod_win.height:                  400
+yap*twod_win.width:                   400
+yap*debug_msg.fontList:             fixed
+yap*debug_msg*rows:                    20
+yap*debug_msg*columns:                100
+yap*comp_msg.fontList:              fixed
+yap*comp_msg*rows:                     20
+yap*comp_msg*columns:                 100
+yap*timer_area.background:          white

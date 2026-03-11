@@ -1,0 +1,54 @@
+                       Parameters for IK3D
+                       *******************
+
+START OF PARAMETERS:
+1                                 \1=continuous(cdf), 0=categorical(pdf)
+9                                 \number thresholds/categories
+0.159 0.278 0.515 0.918 1.211 1.708 2.325 3.329 5.384
+0.1   0.2   0.3   0.4   0.5   0.6   0.7   0.8   0.9
+../../data/cluster.dat            \file with data
+1   2   0    3                    \   columns for X,Y,Z and variable
+direct.ik                         \file with soft indicator input
+1   2   0    3  4  5  6           \   columns for X,Y,Z and indicators
+-1.0e21   1.0e21                  \trimming limits
+2                                 \debugging level: 0,1,2,3
+ik3d.dbg                          \file for debugging output
+ik3d.out                          \file for kriging output
+50   0.5    1.0                   \nx,xmn,xsiz
+50   0.5    1.0                   \ny,ymn,ysiz
+1    0.0    5.0                   \nz,zmn,zsiz
+1   16                            \min, max data for kriging
+25.0  25.0  25.0                  \maximum search radii
+ 0.0   0.0   0.0                  \angles for search ellipsoid
+0                                 \max per octant (0-> not used)
+0   2.5                           \0=full IK, 1=Median IK(threshold num)
+1                                 \0=SK, 1=OK
+2    0.00                         \One   nst, nugget effect
+1    0.5  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.5  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         30.0  30.0  30.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.0                          \      nst, nugget effect
+1    1.0  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.4                          \      nst, nugget effect
+1    0.6  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert
+1    0.9                          \      nst, nugget effect
+1    0.1  0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         11.0  11.0  11.0         \      a_hmax, a_hmin, a_vert

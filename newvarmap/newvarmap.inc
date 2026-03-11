@@ -1,0 +1,79 @@
+C%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+C                                                                      %
+C Copyright (C) 1995 Stanford Center for Reservoir Forecasting.  All   %
+C rights reserved.  Distributed with: C.V. Deutsch and A.G. Journel.   %
+C ``GSLIB: Geostatistical Software Library and User's Guide,'' Oxford  %
+C University Press, New York, 1995. (Second Edition)                   %
+C                                                                      %
+C The programs in GSLIB are distributed in the hope that they will be  %
+C useful, but WITHOUT ANY WARRANTY.  No author or distributor accepts  %
+C responsibility to anyone for the consequences of using them or for   %
+C whether they serve any particular purpose or work at all, unless he  %
+C says so in writing.  Everyone is granted permission to copy, modify  %
+C and redistribute the programs in GSLIB, but only under the condition %
+C that this notice and the above copyright notice remain intact.       %
+C                                                                      %
+C%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+c-----------------------------------------------------------------------
+c
+c                 Variogram Map/Volume Calculation
+c                 ********************************
+c
+c The following Parameters control static dimensioning within varmap:
+c
+c   MAXX      maximum number of nodes in the X direction
+c   MAXY      maximum number of nodes in the Y direction
+c   MAXZ      maximum number of nodes in the Z direction
+c   MAXDAT    maximum number of data (irregular or scattered data)
+c   MAXVAR    maximum number of variables
+c
+c   MXVARG    maximum number of variograms possible at one time
+c
+c   MXLAGX    maximum number of lags in the X direction
+c   MXLAGY    maximum number of lags in the Y direction
+c   MXLAGZ    maximum number of lags in the Z direction
+c
+c-----------------------------------------------------------------------
+c
+c User Adjustable Parameters:
+c
+      parameter(MAXX   =  500, MAXY   =  500, MAXZ   =  100,
+     +          MXLAGX =  100, MXLAGY =  100, MXLAGZ =   50,
+     +          MAXDAT =5000000,MAXVAR =   10, MXVARG =    5  )
+c
+c Fixed Parameters:
+c
+      parameter(MAXDIM=MAX0(MAXX*MAXY*MAXZ,MAXDAT),EPSLON=1.0e-20,
+     +          VERSION=2026.1)
+c
+c Variable Declaration:
+c
+      real    xsiz,ysiz,zsiz,tmin,tmax,dxlag,dylag,dzlag,
+     +        xtol, ytol, ztol,
+     +        x(MAXDAT),y(MAXDAT),z(MAXDAT),
+     +        vr(MAXDIM*MAXVAR),sills(MAXVAR),
+     +        np (-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG),
+     +        gam(-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG),
+     +        hm (-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG),
+     +        tm (-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG),
+     +        hv (-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG),
+     +        tv (-MXLAGX:MXLAGX,-MXLAGY:MXLAGY,-MXLAGZ:MXLAGZ,MXVARG)
+      integer igrid,nx,ny,nz,nxlag,nylag,nzlag,nd,isill,nvarg,minnp,
+     +        ivtail(MXVARG),ivhead(MXVARG),ivtype(MXVARG),
+     +        nxt, nyt, nzt
+      character outfl*40,names(MAXVAR)*12
+
+c
+c Common Blocks:
+c
+      common /datagv/ xsiz,ysiz,zsiz,tmin,tmax,dxlag,dylag,dzlag,
+     +                xtol, ytol, ztol,
+     +                vr,igrid,nx,ny,nz,isill,nvarg,minnp,
+     +                nxlag,nylag,nzlag,ivtail,ivhead,ivtype,
+     +                nxt, nyt, nzt
+
+      common /parmdp/ gam,hm,tm,hv,tv,np,sills
+
+      common /databl/ nd,x,y,z
+
+      common /chargv/ outfl,names

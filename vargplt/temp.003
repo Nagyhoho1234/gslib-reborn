@@ -1,0 +1,227 @@
+%!PS                                 %    Remove     
+90 234 translate 1.5 1.5 scale       %  these lines  
+                                     % for EPSF file 
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 288 216
+%%Creator: GSLIB
+%%Title:   Covariance              tail:primary - Z
+%%CreationDate: 
+%%EndComments
+
+
+%
+%
+%
+
+/m {moveto} def /l {lineto} def /r {rlineto} def
+/s {stroke} def /n {newpath} def /c {closepath} def
+/rtext{ dup stringwidth pop -1 div 0 rmoveto show } def
+/ctext{ dup stringwidth pop -2 div 0 rmoveto show } def
+/ltext{show} def /gr{grestore} def /gs{gsave} def
+/tr{translate} def /setc{setrgbcolor} def
+/bullet{ 6 0 360 arc c fill } def
+
+
+%72 72 translate
+
+
+0.240000 0.240000 scale
+gsave /Symbol findfont 100 scalefont setfont 0 501 m (g) rtext grestore
+/Helvetica             findfont   31 scalefont setfont
+  690    16 m
+(Distance) ctext
+/Helvetica-BoldOblique findfont   37 scalefont setfont
+  188   881 m
+(Covariance              tail:primary - Z  head:primary - Z   direction  1) ltext
+ 3.719 setlinewidth
+n
+  188   874 m
+  188   128 l
+ 1191   128 l
+s
+ 1.981 setlinewidth
+n
+  188   128 m
+  188   109 l
+s
+/Helvetica             findfont   31 scalefont setfont
+  188    79 m
+(0.0) ctext
+n
+  238   128 m
+  238   118 l
+s
+n
+  288   128 m
+  288   118 l
+s
+n
+  339   128 m
+  339   118 l
+s
+n
+  389   128 m
+  389   109 l
+s
+  389    79 m
+(2.0) ctext
+n
+  439   128 m
+  439   118 l
+s
+n
+  489   128 m
+  489   118 l
+s
+n
+  539   128 m
+  539   118 l
+s
+n
+  589   128 m
+  589   109 l
+s
+  589    79 m
+(4.0) ctext
+n
+  639   128 m
+  639   118 l
+s
+n
+  690   128 m
+  690   118 l
+s
+n
+  740   128 m
+  740   118 l
+s
+n
+  790   128 m
+  790   109 l
+s
+  790    79 m
+(6.0) ctext
+n
+  840   128 m
+  840   118 l
+s
+n
+  890   128 m
+  890   118 l
+s
+n
+  940   128 m
+  940   118 l
+s
+n
+  990   128 m
+  990   109 l
+s
+  990    79 m
+(8.0) ctext
+n
+ 1041   128 m
+ 1041   118 l
+s
+n
+ 1091   128 m
+ 1091   118 l
+s
+n
+ 1141   128 m
+ 1141   118 l
+s
+n
+ 1191   128 m
+ 1191   109 l
+s
+ 1191    79 m
+(10.0) ctext
+n
+  188   128 m
+  162   128 l
+s
+  157   128 m
+(0.0) rtext
+n
+  188   187 m
+  174   187 l
+s
+n
+  188   246 m
+  174   246 l
+s
+n
+  188   304 m
+  174   304 l
+s
+n
+  188   363 m
+  162   363 l
+s
+  157   363 m
+(4.0) rtext
+n
+  188   422 m
+  174   422 l
+s
+n
+  188   480 m
+  174   480 l
+s
+n
+  188   539 m
+  174   539 l
+s
+n
+  188   598 m
+  162   598 l
+s
+  157   598 m
+(8.0) rtext
+n
+  188   657 m
+  174   657 l
+s
+n
+  188   715 m
+  174   715 l
+s
+n
+  188   774 m
+  174   774 l
+s
+n
+  188   833 m
+  162   833 l
+s
+  157   833 m
+(12.0) rtext
+n 0288 0874 bullet
+n 0389 0660 bullet
+n 0489 0445 bullet
+n 0589 0345 bullet
+n 0690 0344 bullet
+n 0790 0279 bullet
+n 0890 0228 bullet
+n 0990 0218 bullet
+n 1091 0177 bullet
+n 1191 0201 bullet
+ 1.250 setlinewidth
+n
+  288   874 m
+  389   660 l
+  489   445 l
+  589   345 l
+  690   344 l
+  790   279 l
+  890   228 l
+  990   218 l
+ 1091   177 l
+ 1191   201 l
+s
+%END OF POSTSCRIPT FILE
+4.166667 4.166667 scale
+
+%%EOF
+showpage

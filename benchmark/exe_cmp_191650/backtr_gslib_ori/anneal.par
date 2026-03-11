@@ -1,0 +1,16 @@
+                  Parameters for ANNEAL
+                  *********************
+
+START OF PARAMETERS:
+binary_grid.dat                   \file with input image(s)
+binary_grid.dat                   \file with training image
+0   10                            \debug level, reporting interval
+anneal.dbg                        \file for debug output
+anneal.out                        \file for output simulation
+1                                 \number of realizations
+ 10   10  1                       \nx, ny, nz
+69069                             \random number seed
+5   0.000001                      \maximum iterations, tolerance
+2                                 \number of directions
+1  0  0  5                        \ixl, iyl, izl, nlag
+0  1  0  5                        \ixl, iyl, izl, nlag

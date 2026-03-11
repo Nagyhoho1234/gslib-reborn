@@ -1,0 +1,569 @@
+[-NXHelpFile Yap ver 1.0-]
+/*
+ * NXHelp - demo.hlp
+ *      by Lance Lovette
+ *      Code and display copyright 1992, by Lance Lovette.
+ *      All Rights Reserved
+ */
+
+/* Used as reference when calling help menu */
+<.About>=********     About    ********
+<.Save as>=*  Save as
+<.Open>=*  Open
+<.Load colormap>=*  colormap format
+<.Number of classes>=*  Number of classes, min/max
+<.Change all cutoffs>=*  Change all cutoffs
+<.Print>=*  Options
+
+<**********   Help   **********>
+
+Each line starting with a '*' is a menu selection.
+
+
+<********   Overview   ********>
+       YAP is a program intended to visualize slices of 3D (or 2D) grids
+
+It can be run either by typing "yap" or with some command line arguments.
+
+Type "yap -h" to get a description of the command line arguments.
+
+<********     About    ********>
+                              Yap version 1.7
+
+                              Manu Schnetzler
+                                SCRF group
+                            Stanford University
+
+                   Program available by anonymous ftp at:
+                           geostat1.stanford.edu
+
+              in the directory gutlib (files yap.tar.Z and yap.txt)
+
+                       Contact: marsu@earthling.net
+
+<********   Copyright  ********>
+
+YAP is freeware, it can be copied, distributed and modified without
+any restriction, expect for the help module from NCSU Motif group.
+
+No warranties comes with the program.
+
+Follows the copyright notice accompagning the NCSU package
+
+**********************************************************************
+   OO    O   OOOOO   OOOO   O    O     The North Carolina State
+   O O   O  O       O       O    O     University Motif Group
+   O  O  O  O        OOOO   O    O     NCSU Box 8206
+   O   O O  O            O  O    O     Raleigh, NC 2695-8206
+   O    OO   OOOOO   OOOO    OOOO
+
+   O     O  OOOO  OOOOOOO O  OOOOO      OOOO  OOOO   OOO  O    O OOOO
+   OO   OO O    O    O    O  O         O    O O   O O   O O    O O   O
+   O O O O O    O    O    O  OOOOO     O      OOOO  O   O O    O OOOO
+   O  O  O O    O    O    O  O         O  OOO O O   O   O O    O O
+   O     O O    O    O    O  O         O    O O  O  O   O O    O O 
+   O     O  OOOO     O    O  O          OOOO  O   O  OOO   OOOO  O
+ **********************************************************************
+
+   Title: NXHelp
+
+   File name: nxhelp.c NXHelp.h NXHelp.icn demo.c demo.hlp
+   File Type: Code
+
+   Lead Programmer: Lance Lovette (ltlovett@eos.ncsu.edu)
+ 
+   Testing by: Lance Lovette
+
+   Version: 1.2
+   Date   : 3/24/92
+
+   Description: 
+	NXHelp is a help facility that can easily be added to any
+        Motif program. When activated, NXHelp displays an index of
+        help topics. Once the user has chosen a topic, the text
+        information on that topic is displayed.  Topics can also
+	be selected from help callbacks within the application.
+
+   Author's notes:
+	Destined to be one day a global help facility for all programs
+	incorporating this into their application.
+
+   System Information:
+        This text and code is based on the OSF/Motif widget set version
+        1.1 and the X Window System version 4.
+
+   About the NCSU Motif Group:
+        The NCSU Motif Group is a group of students at North Carolina
+        State University who meet once a week to discuss Motif programming.
+        Individual projects are used to help students learn Motif. 
+        These projects are then released onto the network to help others.
+        All released code is available at our anonymous FTP site:
+        osl.csc.ncsu.edu, in the directory pub/ncsu_motif.  Questions 
+        and comments should be directed to the lead programmer for the 
+        project in question, or to the faculty advisor, Marshall Brain, 
+        at brain@eos.ncsu.edu.
+
+   Copyright Information:
+        Copyright 1992 by Lance Lovette
+        All Rights Reserved
+
+        Permission to use, copy, and distribute this software and text for
+        non-commercial purposes and without fee is hereby granted, provided 
+        that this notice appears in all copies.
+
+        The author disclaims all warranties with regard to the software or 
+        text including all implied warranties of merchantability and fitness.
+
+        In no event shall the author or NCSU be liable for any special,
+        indirect or cosequential damages or any damages whatsoever 
+        resulting from loss of use, data or profits, whether in an 
+        action of contract, negligence or other tortious action, 
+        arising out of or in connection with the use or performance 
+        of this software or text.
+
+<!>
+
+<-*-*-*-  Command line  -*-*-*->
+
+<* Summary of arguments>
+
+-h                   displays a short help message
+-d                   gives the default values for computing statistics, etc
+-cmap filename       colormap
+-cc nb               number of color classes
+-changetrim          force a change of trimming limits values
++/-line              forces or bypasses the displaying of lines
++/-stat              forces or bypasses the computation of statistics
++/-quant             forces or bypasses the computation of quantiles
+filename             file to load
+
+Plus the classical X options.
+
+<* Detail of yap arguments>
+
+-h                   displays a short help message
+
+   A message describing the command line arguments is displayed.
+
+   The program is not run.
+
+-cmap filename       colormap
+
+   By default, the colormap file is searched in the directory defined
+   by _CMAP_DIR in the include file yaconfig.h
+
+   If the exact location has to be provided, either by absolute path
+   (starting with /) or relative to the current location (starting with ./),
+   this path is used.
+
+   Otherwise, the program will look in the directory defined either by:
+    - the environmental variable CMAP_DIR
+    - the #define _CMAP_DIR in yaconfig.h
+
+
+-changetrim         force a change of trimming limits values
+
+   The trimming limits are defined in yaconfig.h. When a file is loaded,
+   those values are used. However, if one wants to change them, this option
+   forces the program to display a window allowing to do it.
+
+   This is only valid in case of a GSLIB format file.
+
++/-lines            forces or bypasses the display of lines
+
+  Even with the option -line, it is possible to display the lines later
+  by switching 'Lines' on in a 2D window.
+
++/-stat             forces or bypasses the computation of statistics
+
+   -stat can be specified to avoid the computation of the statistics.
+   This computation can be long on large files, especially with a lot of
+   classes.
+
++/-quant            forces or bypasses the computation of quantiles
+
+  -quant can be specified to avoid spending time on computing the quantiles.
+  If -quant is set, the quartiles will not be computed and it will not be
+  possible to define the classes such that each class contains the same number
+  of points.
+
+  +stat will be set automatically if +quant is specified
+
+filename            file to load
+
+   This must be a file in a valid format (see File formats for a description).
+
+examples:
+
+   yap -cc 10 +quant -cmap rainbow.cmap test.gsl
+   yap -cc 10 -cmap /users/me/yap/mine.cmap TESTS/test.gsl
+   yap -cc 10 -cmap ./MYCMAPS/mine.cmap /users/me/TESTS/test.gsl
+
+<* Detail of some X arguments>
+
+-display            X server to contact
+
+-geometry geom      size and position (in pixels)
+
+   geom is of the form:
+         wxh+i+j
+             where w is the width
+                   h    the height
+                   i    the position from the left edge
+                   j    the position from the upper edge
+      or wxh-i-j
+             where i is the position from the right edge
+                   j    the position from the lower edge
+
+example: yap -geometry 500x400+10+20
+ 
+
+-bg color           background color
+
+-fg color           foreground color
+
+-iconic             start iconic
+
+<-*-*-*-  File formats  -*-*-*->
+
+<*  overview>
+
+Two main formats with two sub-formats are readable by yap:
+
+- GSLIB (ascii)
+  - standard GSLIB
+  - "extended" GSLIB
+- BINARY
+  - FLOAT BINARY
+  - CHAR BINARY
+
+The point of the BINARY format is to speed up the reading of the file.
+The BINARY formats are only recognized by yap.
+A file in BINARY format contains only one variable, whereas the GSLIB format
+may contain several variables.
+
+If the input file contains only integer values between -127 and 128, the
+CHAR BINARY format allows more compact files.
+
+In case of continuous variable, it is necessary to keep the FLOAT BINARY
+or GSLIB format.
+
+<*  GSLIB format>
+
+A GSLIB file is an text (ASCII) file is defined as follows:
+
+    Title
+    Number n of variables
+    Name of variable 1
+    ...
+    Name of variable n
+    value_1 ... value_n
+    ...
+    value_1 ... value_n
+
+<*  "extended" GSLIB format>
+
+This format follows exactly the GSLIB format with the addition of the
+grid definition.
+
+The second line of the file now contains:
+
+   nb_var nx ny nz
+
+<*  BINARY format>
+
+The BINARY format is only recognized by YAP.
+
+  It contains the description of the grid (number of nodes)
+and the minimum and maximum values in the file.
+
+  Two formats are available depending on the type of values in the input file:
+
+- FLOAT BINARY: the values are stored as float. The BINARY file is big but
+  faster to load than a GSLIB format file.
+  This format is typically used with continuous variables.
+
+- CHAR BINARY:  the values are stored as character. The file is smaller.
+  This format is typically used with categorical variables (facies for example).
+  The values have to be between -128 and 127
+
+<*  conversion between formats>
+
+The conversion can be done inside yap. Once the file is loaded, chose
+"Save as" in the "File" menu to save it in an other format.
+
+The conversion can also be done outside of yap with the two programs:
+
+- gsl2fbin: from GSLIB to FLOAT BINARY
+  compiled by: make gsl2fbin
+
+- gsl2cbin: from GSLIB to CHAR BINARY
+  compiled by: make gsl2cbin
+
+  Warning: if the values in the GSLIB file are not integer, they are
+           rounded to the nearest integer.
+
+  Typically, the values to use for a facies description range
+  from 0 to nb_facies-1 or
+       1 to nb_facies
+
+See also: Save as in File menu
+
+<*  colormap format>
+
+A colormap file is defined as follows:
+
+    Number n of classes (excluding the extremes)
+    r g b for values larger than the maximum
+    r g b for class 1
+    ...
+    r g b for class n
+    r g b for values lower than the minimum
+
+The r, g and b values are real numbers between 0 and 1.
+
+Definition of some colors:
+0 0 0       black
+1 1 1       white
+1 0 0       red
+0 1 0       green
+0 0 1       blue
+1 1 0       yellow
+0 1 1       cyan
+1 0 1       magenta
+
+<!>
+
+<-*-*-*-*-*   MENUS  *-*-*-*-*->
+
+<---------  File menu  -------->
+
+<*  Open>
+--------------------------- Open ---------------------------
+
+Loading a GSLIB or BINARY file.
+
+The format is recognized automatically.
+
+Browse through the directories and select the file.
+
+
+See also: GSLIB and BINARY formats
+
+<*  Save as>
+-------------------------- Save as -------------------------
+
+Saving a file in GSLIB or BINARY format.
+The output file contains only one variable (the one currently loaded).
+
+
+GSLIB format: One variable is saved in gslib format (text)
+
+BINARY float format: no information is lost from the original values
+
+BINARY char format:  the values are rounded to the nearest integer, the
+                     values are between -128 and 127
+
+BINARY char format (class): each class is saved as an integer value.
+
+
+See also: GSLIB and BINARY formats
+
+<*  Load colormap>
+----------------------- Load colormap ----------------------
+
+Loading a new colormap.
+
+The program will first look if the environmental variable CMAP_DIR is
+defined, then _CMAP_DIR defined in yaconfig.h, if none is defined,
+it will search in the current directory.
+
+See also: colormap format
+
+<*  Default colormap>
+---------------------- Default colormap ----------------------
+
+Loads the default colormap defined in yaconfig.h (_CMAP_DEF).
+If this value is not defined, a black to white grayscale is built.
+
+See also: colormap format
+
+<*  Quit>
+--------------------------- Quit ---------------------------
+
+Exits the program.
+
+<---------  Edit menu  -------->
+
+<*  Information window>
+--------------------------- Quit ---------------------------
+
+Gives some information about what the program does.
+
+<*  Number of classes, min/max>
+----------------- Number of classes, min/max ---------------
+
+To change the number of classes and set the minimum and maximum
+values to display.
+
+Select the type of scale (arithmetic, logarithmic or by quantiles)
+
+The last option is only available if the quantile computation has been
+activated.
+The classes are then computed such that each class contains the same number
+of points.
+
+<*  Cutoffs values>
+----------------------- Cutoffs values ---------------------
+
+To change individually the cutoff values.
+
+The selection is accepted only if the ranking is correct.
+
+<*  Change all cutoffs>
+--------------------- Change all cutoffs -------------------
+
+To change the set of all cutoffs at once.
+
+This may not be very convenient with a large number of cutoffs.
+
+The selection is accepted only if the ranking is correct.
+
+<---------  2d slices  -------->
+
+<*  X, Y or Z = cst>
+
+Opens a window and displays a slice in the choosen plane.
+
+The selections are active only if a file has been loaded and if
+the corresponding window is not already open.
+
+By default, the grid blocks have the same dimension.
+
+Close:   closes the 2D window
+Refresh: refreshes the 2D window
+Scaling: allows to display rectangular cells (by specifying a ratio between
+         the axis)
+Print:   sends the current slice to a postscript file
+Stat:    displays the histogram of the slice
+Compute: shows basic statistics of the slice
+
+<------------  Help  ---------->
+
+<*  Help>
+
+Index of the help file.
+
+The variable _HELP_FILE has to be defined in yaconfig.h.
+
+<*  About>
+
+About YAP...
+
+<!>
+
+<-*-*-*-*-  Statistics  -*-*-*-*->
+
+<*  Statistics in the main (3D) window>
+
+The "Statistics" button opens a window with the histogram corresponding
+to the whole 3D grid.
+
+It is possible to select either cdf (cumulative distribution function
+                             or pdf (probability distribution function)
+
+<*  Statistics in the 2D windows>
+
+The same information type of window can be opened using the "Stat" button
+in the corresponding 2D window.
+
+<-*-*-*-*-  Compute  -*-*-*-*->
+
+<*  In the main window>
+
+The "Compute" button open a text window which gives statistical information
+about the 3D grid.
+
+Each time the "Compute" button is pressed, the information is added in the
+same window.
+
+The text can then be sent in an ascii file with the "Dump" button.
+
+If the file currently loaded is name, the text file containing this
+information will be called name.stat.
+
+<*  In the main window>
+
+Similarly, the button "Comp" in the 2D windows sends the statistical
+information about the slice in the same window.
+
+<!>
+
+<-*-*-*-*-  Printing  -*-*-*-*->
+
+<*  Destination>
+
+Nothing is sent directly to the printer.
+
+Instead, a postscript file is created.
+
+By default, this file is in the current directory.
+
+<*  Options>
+
+By clicking on the "Print" button of a 2D window, a new window appears
+to allow to define your postscript output.
+
+The definitions of the offsets and sizes are given in the following figure.
+
+            ________________________________
+            |                              |
+-           |       Main title             |
+|           |   _________________  _       |
+            |   |               | | |      |
+y           |  T|               | | |      |
+s           |  i|               | | |      |
+i           |  t|               | | |      |
+z           |  l|               | | |      |
+e           |  e|               | | |      |
+            |   |               | | |      |
+|           |  y|               | | |      |
+|           |   |_______________| |_|      |
+-  y_offset-|       Title x                |
+            |______________________________|
+               |
+             x_offset
+
+               |------- x_size -----|
+
+Giving a x or y size of 0 will generate a file compatible with
+GSLIB programs plot1 to plot8. In this case, the postscript file
+does not contain the word "showpage" and therefore cannot be sent
+directly to a printer.
+
+<!>
+
+<*  Important information>
+
+When a file has to be written (by "Save as" or "Print" or "Dump"), if
+a file with the same name exists, it is overwritten.
+
+<!>
+
+<*  Bugs and improvements>
+
+Yes, you'll find bugs.
+
+Some errors can be avoided by making sure the data file are correct,
+for example.
+
+Try to follow the information in the "Information window",
+it can give clues.
+
+If you find bugs, I would be happy to hear about them to try to correct the
+problem.
+
+Also, if you have suggestions to improve the program, feel free to
+contact me (my address is in About).
+
+<END>

@@ -1,0 +1,13 @@
+2                                 -number of variables
+1     1                           -semivariogram for "i" and "j"
+1   11.0                          -   nst, nugget effect
+1   39.0  0.0   0.0   0.0         -   it,cc,ang1,ang2,ang3
+         60.0  60.0  60.0         -   a_hmax, a_hmin, a_vert
+1     2                           -semivariogram for "i" and "j"
+1    0.0                          -   nst, nugget effect
+1   14.5  0.0   0.0   0.0         -   it,cc,ang1,ang2,ang3
+         60.0  60.0  60.0         -   a_hmax, a_hmin, a_vert
+2     2                           -semivariogram for "i" and "j"
+1    9.0                          -   nst, nugget effect
+1   15.0  0.0   0.0   0.0         -   it,cc,ang1,ang2,ang3
+         50.0  60.0  60.0         -   a_hmax, a_hmin, a_vert

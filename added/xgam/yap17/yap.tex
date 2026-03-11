@@ -1,0 +1,479 @@
+\documentstyle[12pt,suthesis]{report}
+\setcounter{tocdepth}{1}
+\setlength{\unitlength}{1cm}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\LARGE
+
+${\cal YAP}$
+
+\vspace{3cm}
+
+A program for 3D grid visualization
+
+\large
+
+\vspace{7cm}
+
+October 1993
+
+\vspace{1 cm}
+
+Manu Schnetzler
+
+\vspace{2cm}
+
+Stanford Center for Reservoir Forecasting
+
+Stanford University, California
+
+\end{center}
+
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{headings}
+
+\tableofcontents
+
+\listoffigures
+
+\clearpage
+
+\chapter{User's manual}
+
+\section{Purpose of the program}
+
+YAP is a program for display of two-dimensional sections ({\em slices})
+of three dimensional rectangular grids. It is written in C using
+the Motif library and is menu-driven.
+The input file is an ascii file in the GSLIB format.
+Files in binary format are also accepted to speed up the input loading (but
+the BINARY format is recognized only by YAP).
+
+In addition to on-screen visualization of the 2D sections, it
+is possible to produce a postscript output of any section.
+
+The color or gray scales ({\em colormaps}) are controlled by the user.
+
+\section{Requirements -- compilation}
+\label{compilation}
+
+A C compiler and the Motif library are necessary to compile the program.
+A {\em README} file provides the information needed to do this.
+
+A Makefile is provided, which must be customized to fit
+the architecture and location of libraries and include files.
+Modify also the file {\em yaconfig.h} to define the path to access the default
+colormaps, help file and some other default values
+(window size, default trimming limits).
+
+{\em make} will build YAP.
+
+{\em make install} will build YAP and place it in the directory defined in the
+Makefile ({\em EXEDIR}).
+
+The program has been tested on ULTRIX, OSF1, SGI, HP-UX and AIX operating
+systems.
+
+\section{File formats}
+\label{formats}
+
+ \subsection{GSLIB format}
+ \label{gslib_format}
+
+A ``GSLIB-format'' file is a text ({\em ASCII}) file containing the
+following information, see {\em Deutsch and Journel (1992) p.19}:
+\begin{verbatim}
+Title
+Number of variables n
+Name of variable_1
+Name of variable_2
+...
+Name of variable_n
+value_1 value_2 ... value_n
+value_1 value_2 ... value_n
+...
+value_1 value_2 ... value_n
+\end{verbatim}
+
+The title  and names of variables are strings ending with an {\em End-Of-Line}
+The number of variable is an integer.
+The number of values on each line, and the number of variable names, must
+match the number of variables. The values are of real (float) or integer type.
+{\em They cannot be strings.}
+
+In case of a 3-D gridded file, the GSLIB convention applies:
+$x$ cycles fastest, then $y$ and finally $z$.
+
+A GSLIB file does not include information about the grid dimensions
+(number of nodes in x, y and z). Therefore, the user must provide that
+information.
+An ``extended'' format provides this information on the second line of the
+file, after the number of variables.
+Such a file is still a valid GSLIB file in the sense that it is readable
+by GSLIB programs (though these programs won't use this information).
+
+Example: for a grid $x_1, x_2,... x_k$ by $y_1, y_2,... y_m$ by
+$z_1, z_2,... z_n$ with only one variable, the file would contain: \\
+\\
+Title \\
+1 $k$ $m$ $n$ \\
+Variable name \\
+value at $x_1, y_1, z_1$ \\
+value at $x_2, y_1, z_1$ \\
+... \\
+value at $x_k, y_1, z_1$ \\
+value at $x_1, y_2, z_1$ \\
+... \\
+value at $x_k, y_m, z_1$ \\
+value at $x_1, y_1, z_2$ \\
+... \\
+value at $x_k, y_m, z_n$ \\
+
+The BINARY format input file contains the grid definition as well
+as the minimum and maximum values of the variable. Two programs called
+{\em gsl2fbin} and {\em gsl2cbin} are provided to make the conversion between
+GSLIB and BINARY formats outside YAP, see next section ~\ref{gsl2bin}.
+
+\clearpage
+\subsection{Colormap files}
+
+Colormap files follow the format:
+
+\begin{verbatim}
+Number of colors (excluding the out-of-range colors)
+r g b for values < minimum
+r g b for color 1
+...
+r g b for color n
+r g b for values > maximum
+\end{verbatim}
+
+Each line gives the values of red, green and blue, between 0 and 1 (real
+number). For example: \\
+0 0 0 defines the color black \\
+1 1 1 defines the color white \\
+1 0 0 defines the color red
+
+A grayscale from black to white, with extreme values (larger than the maximum
+and lower than the minimum to display) in white could be specified as:
+
+\begin{verbatim}
+2
+1 1 1    (white for values > maximum to display)
+0 0 0    (black ...)
+1 1 1          (... to white)
+1 1 1    (white for values < minimum to display)
+\end{verbatim}
+
+\section{Conversion between formats}
+\label{gsl2bin}
+
+Though it is possible to save a GSLIB file in binary format (see
+section~\ref{saving}), it might be
+convenient to make the conversion outside of YAP (loading the data
+file is then much faster).
+
+Compile the programs by {\em make gsl2fbin} and {\em make gsl2cbin}.
+
+Run the programs by
+\begin{itemize}
+ \item {\em gsl2fbin input\_file variable\_no nx ny nz output\_file} to create a
+       BINARY float format file.
+ \item {\em gsl2cbin input\_file variable\_no nx ny nz output\_file} to create a
+       BINARY char format file.
+\end{itemize}
+
+The variable number specifies which variable must be saved in the binary file
+(only one can be saved). This number has to be between 1 and the number
+of variables in the file.
+
+\section{Troubleshooting}
+
+This program is an academic product, not a commercial product supported
+by 800-numbers.
+Please report any bug or major improvement to the author,
+by email at {\em marsu@pangea.stanford.edu}, or A.G. Journel, at SCRF, by
+fax: (415) 725-2099, or by email at {\em journel@pangea.stanford.edu}.
+
+Some already known bugs and quirks:
+
+\begin{itemize}
+ \item If you close a 2D window by the window manager menu (alt-F4),
+the program does not know the window has been closed and you will not be able
+to open it again.
+ \item If you ask for too many color classes, the allocation may fail.
+In this case, the program will not crash but it will only allocate the number
+of colors it is able to. If many colors are already used by other programs
+(background for example), the number of remaining colors may be low.
+ \item Be sure the format of your file is correct. YAP may not
+recognize some errors and produce strange results or, in the best case, crash.
+ \item If a 2D slice does not appear, even though the 2D window is there,
+try to increase the size of this window.
+\end{itemize}
+
+To get more information about what is happening during the execution
+of the program, you can open an information window in the menu {\em Edit}.
+The information given there can help trace the source of the
+problem.
+
+The source code is available by anonymous ftp at {\em banach.stanford.edu}
+in the directory {\em graphlib/yap}.
+
+\clearpage
+
+% \appendix
+
+% \addcontentsline{toc}{section}{Appendix}
+
+% \begin{center}
+% \LARGE
+% Appendix
+% \vspace{2cm}
+% \end{center}
+
+\chapter{Example of run}
+
+This section describes step by step a complete session of YAP.
+
+\section{Starting the program}
+
+Assuming that you have successfully compiled YAP, and that it is accessible
+(either the program is in the current directory or accessible through PATH),
+run the program by {\em yap}.
+
+It is also possible to give the file name on
+the command line, as well as some options. Enter {\em yap -h} for a description
+of the command line arguments.
+
+\section{Loading a file}
+
+When YAP is started, only a white drawing area and a menu bar appear. \\
+% \begin{figure}[ht]
+\vspace{33pt}
+\special{psfile=menubar.ps hoffset=0 voffset=-33pt}
+\addcontentsline{lof}{figure}{Window -- Menu Bar}
+% \end{figure}
+
+\clearpage
+Select {\em File-Open} to load a data file.
+
+A file selection box appears to help you choose the file.\\
+% \begin{figure}
+\vspace{377pt}
+\special{psfile=file_sel.ps hoffset=0 voffset=-377pt}
+\addcontentsline{lof}{figure}{Window -- File Selection}
+% \end{figure}
+
+\clearpage
+
+Once the file is selected (by double-clicking on the file name or clicking on the
+file name and then on {\em OK}), a new window appears allowing you to choose
+the variable you want to display and the trimming limits.
+
+{\bf Remark}: in case of a binary file, this window does not appear, since
+such file contains only one variable.\\
+% \begin{figure}[ht]
+\vspace{194pt}
+\special{psfile=variables.ps hoffset=0 voffset=-194pt}
+\addcontentsline{lof}{figure}{Window -- Variables Selection}
+% \end{figure}
+
+\clearpage
+
+Click on {\em Set} and give the number of pixels in each direction, the
+number of classes (not too big!), and the minimum and maximum values to
+display.\\
+% \begin{figure}[ht]
+\vspace{346pt}
+\special{psfile=parameters.ps hoffset=0 voffset=-346pt}
+\addcontentsline{lof}{figure}{Window -- Parameters Selection}
+% \end{figure}
+
+The 3D volume and the color scale appear in the main window.
+
+\section{Changing the colormap}
+
+Select {\em File-Load colormap} to open a file selection box displaying
+the file names with {\em cmap} as extension. Choose the colormap.
+A default colormap (variable {\em \_CMAP\_DEF} defined in the file
+{\em yaconfig.h}) is loaded if
+no other colormap has been loaded before the first data file is read.
+In case the default colormap is not defined or found, a gray scale is chosen.
+
+The default location of the colormap file is defined either as an
+environmental variable called {\em CMAP\_DIR} or in the file {\em yaconfig.h}
+(variable {\em \_CMAP\_DIR}).
+If neither of these variables are defined, the program will look in
+the current directory for the colormaps.
+
+\section{Changing the cutoffs}
+
+You can change the cutoffs of the color scale by:
+\begin{itemize}
+ \item Selecting {\em Edit-Number of classes, min/max}. This gives you the
+       opportunity to change the number of classes (excluding the two
+       out-of-range classes) and minimum and maximum to display. The
+       cutoffs are then interpolated linearly.\\
+% \begin{figure}[ht]
+\vspace{189pt}
+\special{psfile=nb_class.ps hoffset=0 voffset=-189pt}
+\addcontentsline{lof}{figure}{Window -- Number of Classes}
+% \end{figure}
+ \item Selecting {\em Edit-Cutoffs values}. Each cutoff value can be changed
+       individually. The set of all cutoff values is accepted only if the
+       cutoffs are all increasing.\\
+% \begin{figure}[ht]
+\vspace{160pt}
+\special{psfile=cutoffs.ps hoffset=0 voffset=-160pt}
+\addcontentsline{lof}{figure}{Window -- Cutoffs Values}
+% \end{figure}
+\end{itemize}
+
+\section{Opening a 2D window}
+
+You can now open a 2D window in each of the three planes (yz, xz or xy)
+with the submenus in {\em 2d slices}.\\
+% \begin{figure}
+\vspace{358pt}
+\special{psfile=2dwin.ps hoffset=0 voffset=-358pt}
+\addcontentsline{lof}{figure}{Window -- 2D Window}
+% \end{figure}
+
+{\bf Remark}: the 2D views are refreshed each time the window is exposed
+after having been hidden, or each time it is resized.
+The 3D view, however, is refreshed only in 
+case of resizing. To force a refresh, click on {\em Refresh 3D} or
+{\em Refresh 2D}.
+
+In each 2D window, you can change the slice currently shown with the slider
+(except if there is only one plane in this direction).
+A 2D window can be closed, refreshed individually, or sent to a postscript
+file. Clicking on a 2D slice gives the information of the location (x, y and z)
+and the value at this location.
+
+\section{Printing}
+When you select {\em Print} in a 2D window, you can specify:
+\begin{itemize}\itemsep -0.3cm
+\item name of the output postscript file
+\item main title
+\item titles for the two axis
+\item offsets of the postscript picture (x and y positions for the beginning
+      of the image, in points)
+\item size of the postscript picture (in points)
+\item y/x ratio (ratio of the pixels size)
+\item mode (landscape or portrait)
+\item if you want the color scale to appear on the image
+\end{itemize}
+
+These parameters are set in a window:\\
+% \begin{figure}[ht]
+\vspace{389pt}
+\special{psfile=print.ps hoffset=0 voffset=-389pt}
+\addcontentsline{lof}{figure}{Window -- Print}
+% \end{figure}
+
+The meaning of the parameters is given in the following drawing:\\
+\vspace{423pt}
+\special{psfile=xfig1.ps hoffset=0 voffset=-423pt}
+\addcontentsline{lof}{figure}{Print parameters}
+
+{\bf Remark}: the postscript output is a color image. However, if the file
+is sent to a black and white postscript printer, there is an automatic
+detection and the file is printed with a black to white scale.
+In case the detection is not automatic with your printer, uncomment the line
+\begin{verbatim}
+% /color false def
+\end{verbatim}
+by removing the \% sign
+
+\section{Saving a file}
+\label{saving}
+
+You can save a file by selecting {\em File-Save as}, either in GSLIB
+format (with only one column) or binary (much faster to load, but recognized
+only by YAP).
+The BINARY char format creates smaller files. It should be used only with
+integer data between 0 and 255.\\
+% \begin{figure}[ht]
+\vspace{184pt}
+\special{psfile=save.ps hoffset=0 voffset=-212pt}
+\addcontentsline{lof}{figure}{Window -- Save}
+% \end{figure}
+
+\clearpage
+\section{Getting help}
+
+If you have problems compiling the program, refer to section \ref{compilation}:
+{\em Requirements -- compilation}.
+Check everything is correct in the Makefile (location of libraries, includes,
+compiler).
+
+If YAP does not find the colormap files, check the directories
+defined in {\em yaconfig.h}.
+
+If you need information during the execution, the {\em Help} menu provides
+limited help.\\
+% \begin{figure}[ht]
+\vspace{278pt}
+\special{psfile=help.ps hoffset=-30pt voffset=-278pt}
+\addcontentsline{lof}{figure}{Window -- Help}
+% \end{figure}
+
+\clearpage
+
+An information windows tells you what the program does during its execution
+(Menu {\em Edit-Information window}).\\
+% \begin{figure}[ht]
+\vspace{212pt}
+\special{psfile=info_win.ps hoffset=-30pt voffset=-212pt}
+\addcontentsline{lof}{figure}{Window -- Information Window}
+% \end{figure}
+
+\clearpage
+\chapter{Figures}
+
+The following pages show some screen view during the execution of the program
+and postscript outputs.
+
+\begin{figure}[h]
+\vspace{560pt}
+\special{psfile=screen1.ps hoffset=-220pt voffset=0pt}
+
+\begin{center}
+\vspace{20pt}
+Screen view -- Continuous variable
+\end{center}
+
+\addcontentsline{lof}{figure}{Screen view -- Continuous variable}
+\end{figure}
+
+\begin{figure}[h]
+\vspace{560pt}
+
+\special{psfile=screen2.ps hoffset=-50pt voffset=0pt}
+
+\begin{center}
+\vspace{20pt}
+Screen view -- Indicator variable (facies)
+\end{center}
+
+\addcontentsline{lof}{figure}{Screen view -- Indicator variable (facies)}
+\end{figure}
+
+\begin{figure}[h]
+\vspace{600pt}
+
+\begin{center}
+Output of YAP -- Indicator variable (facies)
+\end{center}
+
+\special{psfile=ps_screen2.ps hoffset=-100pt voffset=0pt}
+\addcontentsline{lof}{figure}{Output of YAP -- Indicator variable (facies)}
+\end{figure}
+
+\end{document}

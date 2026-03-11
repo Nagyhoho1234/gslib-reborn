@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {1}User's manual}{3}
+\contentsline {section}{\numberline {1.1}Purpose of the program}{3}
+\contentsline {section}{\numberline {1.2}Requirements -- compilation}{3}
+\contentsline {section}{\numberline {1.3}File formats}{4}
+\contentsline {subsection}{\numberline {1.3.1}GSLIB format}{4}
+\contentsline {subsection}{\numberline {1.3.2}Colormap files}{6}
+\contentsline {section}{\numberline {1.4}Conversion between formats}{6}
+\contentsline {section}{\numberline {1.5}Troubleshooting}{7}
+\contentsline {chapter}{\numberline {2}Example of run}{9}
+\contentsline {section}{\numberline {2.1}Starting the program}{9}
+\contentsline {section}{\numberline {2.2}Loading a file}{9}
+\contentsline {section}{\numberline {2.3}Changing the colormap}{12}
+\contentsline {section}{\numberline {2.4}Changing the cutoffs}{13}
+\contentsline {section}{\numberline {2.5}Opening a 2D window}{14}
+\contentsline {section}{\numberline {2.6}Printing}{15}
+\contentsline {section}{\numberline {2.7}Saving a file}{17}
+\contentsline {section}{\numberline {2.8}Getting help}{18}
+\contentsline {chapter}{\numberline {3}Figures}{20}

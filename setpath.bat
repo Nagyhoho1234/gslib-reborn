@@ -1,0 +1,1 @@
+path=%path%;c:\Program Files\Simply Fortran 2\mingw-w64\bin\

@@ -1,0 +1,276 @@
+ 
+ Histogram Data: Variable number            3
+   Number   =          140
+   Average  =    4.515338    
+   Variance =    8.009607    
+
+Initial Model
+   Number    =      100
+   mean      =       4.736292
+   std.dev.  =       2.319510
+   minimum   =       0.010000
+   maximum   =      10.058171
+
+
+Histogram Reproduction at this time:
+ Quantile   1 z value       0.0100 target  0.0100 actual  0.0400
+ Quantile   2 z value       0.0100 target  0.0200 actual  0.0400
+ Quantile   3 z value       0.0100 target  0.0300 actual  0.0400
+ Quantile   4 z value       0.0100 target  0.0400 actual  0.0400
+ Quantile   5 z value       0.0100 target  0.0500 actual  0.0400
+ Quantile   6 z value       0.0100 target  0.0600 actual  0.0400
+ Quantile   7 z value       0.0100 target  0.0700 actual  0.0400
+ Quantile   8 z value       0.1382 target  0.0800 actual  0.0400
+ Quantile   9 z value       0.3982 target  0.0900 actual  0.0500
+ Quantile  10 z value       0.6716 target  0.1000 actual  0.0600
+ Quantile  11 z value       0.7684 target  0.1100 actual  0.0700
+ Quantile  12 z value       0.9106 target  0.1200 actual  0.0800
+ Quantile  13 z value       1.1487 target  0.1300 actual  0.0900
+ Quantile  14 z value       1.2204 target  0.1400 actual  0.0900
+ Quantile  15 z value       1.3033 target  0.1500 actual  0.1000
+ Quantile  16 z value       1.4364 target  0.1600 actual  0.1100
+ Quantile  17 z value       1.6964 target  0.1700 actual  0.1100
+ Quantile  18 z value       1.8933 target  0.1800 actual  0.1100
+ Quantile  19 z value       1.9603 target  0.1900 actual  0.1300
+ Quantile  20 z value       1.9765 target  0.2000 actual  0.1400
+ Quantile  21 z value       1.9814 target  0.2100 actual  0.1600
+ Quantile  22 z value       2.0148 target  0.2200 actual  0.1600
+ Quantile  23 z value       2.1112 target  0.2300 actual  0.1600
+ Quantile  24 z value       2.1877 target  0.2400 actual  0.1700
+ Quantile  25 z value       2.3098 target  0.2500 actual  0.1800
+ Quantile  26 z value       2.3866 target  0.2600 actual  0.1800
+ Quantile  27 z value       2.7113 target  0.2700 actual  0.1800
+ Quantile  28 z value       2.7271 target  0.2800 actual  0.1800
+ Quantile  29 z value       2.7410 target  0.2900 actual  0.2000
+ Quantile  30 z value       2.8813 target  0.3000 actual  0.2200
+ Quantile  31 z value       3.0591 target  0.3100 actual  0.2300
+ Quantile  32 z value       3.1292 target  0.3200 actual  0.2300
+ Quantile  33 z value       3.2127 target  0.3300 actual  0.2300
+ Quantile  34 z value       3.3857 target  0.3400 actual  0.2400
+ Quantile  35 z value       3.4447 target  0.3500 actual  0.2400
+ Quantile  36 z value       3.4745 target  0.3600 actual  0.2400
+ Quantile  37 z value       3.7061 target  0.3700 actual  0.2400
+ Quantile  38 z value       3.7411 target  0.3800 actual  0.2700
+ Quantile  39 z value       3.8015 target  0.3900 actual  0.2700
+ Quantile  40 z value       3.8458 target  0.4000 actual  0.2900
+ Quantile  41 z value       3.9744 target  0.4100 actual  0.3000
+ Quantile  42 z value       4.0204 target  0.4200 actual  0.3200
+ Quantile  43 z value       4.0638 target  0.4300 actual  0.3300
+ Quantile  44 z value       4.2097 target  0.4400 actual  0.3600
+ Quantile  45 z value       4.2338 target  0.4500 actual  0.3600
+ Quantile  46 z value       4.2540 target  0.4600 actual  0.3800
+ Quantile  47 z value       4.3200 target  0.4700 actual  0.3900
+ Quantile  48 z value       4.3965 target  0.4800 actual  0.3900
+ Quantile  49 z value       4.4471 target  0.4900 actual  0.4000
+ Quantile  50 z value       4.5680 target  0.5000 actual  0.4100
+ Quantile  51 z value       4.6554 target  0.5100 actual  0.4600
+ Quantile  52 z value       4.6810 target  0.5200 actual  0.4700
+ Quantile  53 z value       4.7377 target  0.5300 actual  0.4800
+ Quantile  54 z value       4.7664 target  0.5400 actual  0.4900
+ Quantile  55 z value       4.8173 target  0.5500 actual  0.4900
+ Quantile  56 z value       4.9227 target  0.5600 actual  0.4900
+ Quantile  57 z value       4.9454 target  0.5700 actual  0.5100
+ Quantile  58 z value       4.9895 target  0.5800 actual  0.5300
+ Quantile  59 z value       5.0091 target  0.5900 actual  0.5600
+ Quantile  60 z value       5.0561 target  0.6000 actual  0.5800
+ Quantile  61 z value       5.1810 target  0.6100 actual  0.5800
+ Quantile  62 z value       5.2447 target  0.6200 actual  0.5800
+ Quantile  63 z value       5.3384 target  0.6300 actual  0.6100
+ Quantile  64 z value       5.3443 target  0.6400 actual  0.6200
+ Quantile  65 z value       5.4350 target  0.6500 actual  0.6500
+ Quantile  66 z value       5.5308 target  0.6600 actual  0.6800
+ Quantile  67 z value       5.5362 target  0.6700 actual  0.6900
+ Quantile  68 z value       5.5442 target  0.6800 actual  0.7100
+ Quantile  69 z value       5.5616 target  0.6900 actual  0.7100
+ Quantile  70 z value       5.6401 target  0.7000 actual  0.7100
+ Quantile  71 z value       5.7173 target  0.7100 actual  0.7100
+ Quantile  72 z value       5.8326 target  0.7200 actual  0.7300
+ Quantile  73 z value       5.9939 target  0.7300 actual  0.7600
+ Quantile  74 z value       6.0691 target  0.7400 actual  0.7700
+ Quantile  75 z value       6.2245 target  0.7500 actual  0.7700
+ Quantile  76 z value       6.3448 target  0.7600 actual  0.7700
+ Quantile  77 z value       6.3647 target  0.7700 actual  0.7700
+ Quantile  78 z value       6.4672 target  0.7800 actual  0.7800
+ Quantile  79 z value       6.5973 target  0.7900 actual  0.8000
+ Quantile  80 z value       6.7866 target  0.8000 actual  0.8200
+ Quantile  81 z value       6.9131 target  0.8100 actual  0.8300
+ Quantile  82 z value       6.9394 target  0.8200 actual  0.8400
+ Quantile  83 z value       6.9620 target  0.8300 actual  0.8500
+ Quantile  84 z value       7.0396 target  0.8400 actual  0.8600
+ Quantile  85 z value       7.4322 target  0.8500 actual  0.8700
+ Quantile  86 z value       7.5586 target  0.8600 actual  0.8900
+ Quantile  87 z value       7.6491 target  0.8700 actual  0.8900
+ Quantile  88 z value       7.7174 target  0.8800 actual  0.9200
+ Quantile  89 z value       7.8962 target  0.8900 actual  0.9300
+ Quantile  90 z value       8.0851 target  0.9000 actual  0.9300
+ Quantile  91 z value       8.3710 target  0.9100 actual  0.9400
+ Quantile  92 z value       8.8255 target  0.9200 actual  0.9400
+ Quantile  93 z value       9.1380 target  0.9300 actual  0.9500
+ Quantile  94 z value       9.3130 target  0.9400 actual  0.9600
+ Quantile  95 z value       9.5665 target  0.9500 actual  0.9800
+ Quantile  96 z value       9.8866 target  0.9600 actual  0.9800
+ Quantile  97 z value      10.0638 target  0.9700 actual  1.0000
+ Quantile  98 z value      10.2303 target  0.9800 actual  1.0000
+ Quantile  99 z value      11.0891 target  0.9900 actual  1.0000
+
+Variogram Reproduction at this time:
+    Lag:   1 model       4.0351 actual       5.7975
+    Lag:   2 model       4.0351 actual       5.2526
+    Lag:   3 model       4.8804 actual       5.4652
+    Lag:   4 model       4.8804 actual       5.5957
+    Lag:   5 model       5.3801 actual       5.9853
+    Lag:   6 model       5.3801 actual       5.2376
+    Lag:   7 model       5.3801 actual       5.1194
+    Lag:   8 model       5.3801 actual       5.3816
+    Lag:   9 model       5.3801 actual       5.8369
+    Lag:  10 model       5.3801 actual       4.8534
+    Lag:  11 model       5.3801 actual       5.2292
+    Lag:  12 model       5.3801 actual       5.3051
+    Lag:  13 model       5.3801 actual       6.8196
+    Lag:  14 model       5.3801 actual       5.7315
+    Lag:  15 model       5.3801 actual       6.7888
+    Lag:  16 model       5.3801 actual       5.3183
+    Lag:  17 model       5.3801 actual       4.6157
+    Lag:  18 model       5.3801 actual       6.8103
+    Lag:  19 model       5.3801 actual       5.6343
+    Lag:  20 model       5.3801 actual       4.5289
+
+Initial Objective Function Values
+   Histogram             :       1.462531
+   Variogram             :       0.613781
+   Indicator Variograms  :       0.000000
+   Correlation Coeficient:       0.000000
+   Conditional Dists.    :       0.000000
+
+
+Scaling of Objective Function Values
+   Histogram             :      17.905790
+   Variogram             :      11.181825
+   Indicator Variograms  :       1.000000
+   Correlation Coeficient:       1.000000
+   Conditional Dists.    :       1.000000
+
+ Stopped because of nswap gt maxswap
+
+Histogram Reproduction at this time:
+ Quantile   1 z value       0.0100 target  0.0100 actual  0.0400
+ Quantile   2 z value       0.0100 target  0.0200 actual  0.0400
+ Quantile   3 z value       0.0100 target  0.0300 actual  0.0400
+ Quantile   4 z value       0.0100 target  0.0400 actual  0.0400
+ Quantile   5 z value       0.0100 target  0.0500 actual  0.0400
+ Quantile   6 z value       0.0100 target  0.0600 actual  0.0400
+ Quantile   7 z value       0.0100 target  0.0700 actual  0.0400
+ Quantile   8 z value       0.1382 target  0.0800 actual  0.0400
+ Quantile   9 z value       0.3982 target  0.0900 actual  0.0800
+ Quantile  10 z value       0.6716 target  0.1000 actual  0.1000
+ Quantile  11 z value       0.7684 target  0.1100 actual  0.1100
+ Quantile  12 z value       0.9106 target  0.1200 actual  0.1100
+ Quantile  13 z value       1.1487 target  0.1300 actual  0.1300
+ Quantile  14 z value       1.2204 target  0.1400 actual  0.1400
+ Quantile  15 z value       1.3033 target  0.1500 actual  0.1500
+ Quantile  16 z value       1.4364 target  0.1600 actual  0.1600
+ Quantile  17 z value       1.6964 target  0.1700 actual  0.1700
+ Quantile  18 z value       1.8933 target  0.1800 actual  0.1800
+ Quantile  19 z value       1.9603 target  0.1900 actual  0.1900
+ Quantile  20 z value       1.9765 target  0.2000 actual  0.2000
+ Quantile  21 z value       1.9814 target  0.2100 actual  0.2100
+ Quantile  22 z value       2.0148 target  0.2200 actual  0.2200
+ Quantile  23 z value       2.1112 target  0.2300 actual  0.2300
+ Quantile  24 z value       2.1877 target  0.2400 actual  0.2400
+ Quantile  25 z value       2.3098 target  0.2500 actual  0.2500
+ Quantile  26 z value       2.3866 target  0.2600 actual  0.2600
+ Quantile  27 z value       2.7113 target  0.2700 actual  0.2700
+ Quantile  28 z value       2.7271 target  0.2800 actual  0.2700
+ Quantile  29 z value       2.7410 target  0.2900 actual  0.2900
+ Quantile  30 z value       2.8813 target  0.3000 actual  0.3000
+ Quantile  31 z value       3.0591 target  0.3100 actual  0.3100
+ Quantile  32 z value       3.1292 target  0.3200 actual  0.3200
+ Quantile  33 z value       3.2127 target  0.3300 actual  0.3300
+ Quantile  34 z value       3.3857 target  0.3400 actual  0.3400
+ Quantile  35 z value       3.4447 target  0.3500 actual  0.3500
+ Quantile  36 z value       3.4745 target  0.3600 actual  0.3600
+ Quantile  37 z value       3.7061 target  0.3700 actual  0.3700
+ Quantile  38 z value       3.7411 target  0.3800 actual  0.3800
+ Quantile  39 z value       3.8015 target  0.3900 actual  0.3900
+ Quantile  40 z value       3.8458 target  0.4000 actual  0.4000
+ Quantile  41 z value       3.9744 target  0.4100 actual  0.4100
+ Quantile  42 z value       4.0204 target  0.4200 actual  0.4200
+ Quantile  43 z value       4.0638 target  0.4300 actual  0.4300
+ Quantile  44 z value       4.2097 target  0.4400 actual  0.4400
+ Quantile  45 z value       4.2338 target  0.4500 actual  0.4500
+ Quantile  46 z value       4.2540 target  0.4600 actual  0.4600
+ Quantile  47 z value       4.3200 target  0.4700 actual  0.4700
+ Quantile  48 z value       4.3965 target  0.4800 actual  0.4800
+ Quantile  49 z value       4.4471 target  0.4900 actual  0.4900
+ Quantile  50 z value       4.5680 target  0.5000 actual  0.5000
+ Quantile  51 z value       4.6554 target  0.5100 actual  0.5100
+ Quantile  52 z value       4.6810 target  0.5200 actual  0.5200
+ Quantile  53 z value       4.7377 target  0.5300 actual  0.5300
+ Quantile  54 z value       4.7664 target  0.5400 actual  0.5400
+ Quantile  55 z value       4.8173 target  0.5500 actual  0.5500
+ Quantile  56 z value       4.9227 target  0.5600 actual  0.5600
+ Quantile  57 z value       4.9454 target  0.5700 actual  0.5700
+ Quantile  58 z value       4.9895 target  0.5800 actual  0.5800
+ Quantile  59 z value       5.0091 target  0.5900 actual  0.5900
+ Quantile  60 z value       5.0561 target  0.6000 actual  0.6000
+ Quantile  61 z value       5.1810 target  0.6100 actual  0.6100
+ Quantile  62 z value       5.2447 target  0.6200 actual  0.6200
+ Quantile  63 z value       5.3384 target  0.6300 actual  0.6300
+ Quantile  64 z value       5.3443 target  0.6400 actual  0.6400
+ Quantile  65 z value       5.4350 target  0.6500 actual  0.6500
+ Quantile  66 z value       5.5308 target  0.6600 actual  0.6600
+ Quantile  67 z value       5.5362 target  0.6700 actual  0.6700
+ Quantile  68 z value       5.5442 target  0.6800 actual  0.6800
+ Quantile  69 z value       5.5616 target  0.6900 actual  0.6900
+ Quantile  70 z value       5.6401 target  0.7000 actual  0.7000
+ Quantile  71 z value       5.7173 target  0.7100 actual  0.7100
+ Quantile  72 z value       5.8326 target  0.7200 actual  0.7200
+ Quantile  73 z value       5.9939 target  0.7300 actual  0.7300
+ Quantile  74 z value       6.0691 target  0.7400 actual  0.7400
+ Quantile  75 z value       6.2245 target  0.7500 actual  0.7500
+ Quantile  76 z value       6.3448 target  0.7600 actual  0.7600
+ Quantile  77 z value       6.3647 target  0.7700 actual  0.7700
+ Quantile  78 z value       6.4672 target  0.7800 actual  0.7800
+ Quantile  79 z value       6.5973 target  0.7900 actual  0.7900
+ Quantile  80 z value       6.7866 target  0.8000 actual  0.8100
+ Quantile  81 z value       6.9131 target  0.8100 actual  0.8100
+ Quantile  82 z value       6.9394 target  0.8200 actual  0.8200
+ Quantile  83 z value       6.9620 target  0.8300 actual  0.8300
+ Quantile  84 z value       7.0396 target  0.8400 actual  0.8400
+ Quantile  85 z value       7.4322 target  0.8500 actual  0.8600
+ Quantile  86 z value       7.5586 target  0.8600 actual  0.8600
+ Quantile  87 z value       7.6491 target  0.8700 actual  0.8700
+ Quantile  88 z value       7.7174 target  0.8800 actual  0.8800
+ Quantile  89 z value       7.8962 target  0.8900 actual  0.8900
+ Quantile  90 z value       8.0851 target  0.9000 actual  0.9000
+ Quantile  91 z value       8.3710 target  0.9100 actual  0.9600
+ Quantile  92 z value       8.8255 target  0.9200 actual  0.9800
+ Quantile  93 z value       9.1380 target  0.9300 actual  0.9800
+ Quantile  94 z value       9.3130 target  0.9400 actual  0.9800
+ Quantile  95 z value       9.5665 target  0.9500 actual  0.9800
+ Quantile  96 z value       9.8866 target  0.9600 actual  0.9800
+ Quantile  97 z value      10.0638 target  0.9700 actual  0.9800
+ Quantile  98 z value      10.2303 target  0.9800 actual  0.9900
+ Quantile  99 z value      11.0891 target  0.9900 actual  1.0000
+
+Variogram Reproduction at this time:
+    Lag:   1 model       4.0351 actual       4.4870
+    Lag:   2 model       4.0351 actual       4.1866
+    Lag:   3 model       4.8804 actual       4.9440
+    Lag:   4 model       4.8804 actual       5.0412
+    Lag:   5 model       5.3801 actual       5.3133
+    Lag:   6 model       5.3801 actual       5.6091
+    Lag:   7 model       5.3801 actual       5.5777
+    Lag:   8 model       5.3801 actual       6.0658
+    Lag:   9 model       5.3801 actual       5.5210
+    Lag:  10 model       5.3801 actual       5.3565
+    Lag:  11 model       5.3801 actual       5.3950
+    Lag:  12 model       5.3801 actual       5.5057
+    Lag:  13 model       5.3801 actual       5.5016
+    Lag:  14 model       5.3801 actual       5.4369
+    Lag:  15 model       5.3801 actual       5.3717
+    Lag:  16 model       5.3801 actual       5.7882
+    Lag:  17 model       5.3801 actual       6.8808
+    Lag:  18 model       5.3801 actual       5.2843
+    Lag:  19 model       5.3801 actual       5.7242
+    Lag:  20 model       5.3801 actual       5.5659

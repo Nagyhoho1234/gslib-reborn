@@ -1,0 +1,100 @@
+%!PS
+/m {moveto} def
+/l {lineto} def
+/r {rlineto} def
+/s {stroke} def
+/n {newpath} def
+/c {closepath} def
+2 setlinejoin 
+/rtext{ dup stringwidth pop -1 div 0  rmoveto show } def
+/ltext{show} def
+/ctext{ dup stringwidth pop -2 div 0  rmoveto show } def
+/bullet{ 6 0 360 arc c fill } def
+%
+% STARTING A NEW PAGE:
+0.24 0.24 scale
+ 0.000 setlinewidth
+n
+0300 3029 m
+0300 3091 l
+2400 3091 l
+2400 3029 l
+0300 3029 l
+c
+0.93 setgray
+fill
+0.0 setgray
+/Helvetica-BoldOblique findfont   50 scalefont setfont
+0333 3041 m
+(Parameter File:   gtsim.par) ltext
+/Helvetica-Bold        findfont   41 scalefont setfont
+2366 3041 m
+(Wed Dec 27 11:13:10 1995) rtext
+ 4.167 setlinewidth
+n
+0300 0300 m
+0300 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 3000 m
+2250 3000 l
+s
+ 4.167 setlinewidth
+n
+2400 0300 m
+2400 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 0150 m
+2250 0150 l
+s
+ 4.167 setlinewidth newpath
+00450 02850 00150 00090 00180 arc s
+ 4.167 setlinewidth newpath
+02250 02850 00150 00000 00090 arc s
+ 4.167 setlinewidth newpath
+02250 00300 00150 00270 00360 arc s
+ 4.167 setlinewidth newpath
+00450 00300 00150 00180 00270 arc s
+/Courier               findfont   43 scalefont setfont
+0450 2940 m
+(                     Parameters for GTSIM) ltext
+0450 2891 m
+(                     ********************) ltext
+0450 2795 m
+(START OF PARAMETERS:) ltext
+0450 2747 m
+(sgsim.out                     \\file with input Gaussian realizations) ltext
+0450 2699 m
+(gtsim.out                     \\file for output categorical realizations) ltext
+0450 2651 m
+(1                             \\number of realizations) ltext
+0450 2603 m
+(50   50   1                   \\nx,ny,nz) ltext
+0450 2555 m
+(3                             \\number of categories) ltext
+0450 2506 m
+(1    0.25                     \\cat\(1\)  global proportion\(1\)) ltext
+0450 2458 m
+(2    0.25                     \\cat\(2\)  global proportion\(2\)) ltext
+0450 2410 m
+(3    0.50                     \\cat\(3\)  global proportion\(3\)) ltext
+0450 2362 m
+(0                             \\proportion curves \(0=no, 1=yes\)) ltext
+0450 2314 m
+(propc01.dat                   \\   file with local proportion \(1\)) ltext
+0450 2266 m
+(1                             \\   column number for proportion) ltext
+0450 2218 m
+(propc02.dat                   \\   file with local proportion \(2\)) ltext
+0450 2170 m
+(1                             \\   column number for proportion) ltext
+0450 2121 m
+(propc03.dat                   \\   file with local proportion \(3\)) ltext
+0450 2073 m
+(1                             \\   column number for proportion) ltext
+%END OF PAGE
+4.166667 4.166667 scale
+showpage

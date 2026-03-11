@@ -1,0 +1,98 @@
+%!PS
+/m {moveto} def
+/l {lineto} def
+/r {rlineto} def
+/s {stroke} def
+/n {newpath} def
+/c {closepath} def
+2 setlinejoin 
+/rtext{ dup stringwidth pop -1 div 0  rmoveto show } def
+/ltext{show} def
+/ctext{ dup stringwidth pop -2 div 0  rmoveto show } def
+/bullet{ 6 0 360 arc c fill } def
+%
+% STARTING A NEW PAGE:
+0.24 0.24 scale
+ 0.000 setlinewidth
+n
+0300 3029 m
+0300 3091 l
+2400 3091 l
+2400 3029 l
+0300 3029 l
+c
+0.93 setgray
+fill
+0.0 setgray
+/Helvetica-BoldOblique findfont   50 scalefont setfont
+0333 3041 m
+(Parameter File:   anneal.par) ltext
+/Helvetica-Bold        findfont   41 scalefont setfont
+2366 3041 m
+(Wed Dec 27 11:14:22 1995) rtext
+ 4.167 setlinewidth
+n
+0300 0300 m
+0300 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 3000 m
+2250 3000 l
+s
+ 4.167 setlinewidth
+n
+2400 0300 m
+2400 2850 l
+s
+ 4.167 setlinewidth
+n
+0450 0150 m
+2250 0150 l
+s
+ 4.167 setlinewidth newpath
+00450 02850 00150 00090 00180 arc s
+ 4.167 setlinewidth newpath
+02250 02850 00150 00000 00090 arc s
+ 4.167 setlinewidth newpath
+02250 00300 00150 00270 00360 arc s
+ 4.167 setlinewidth newpath
+00450 00300 00150 00180 00270 arc s
+/Courier               findfont   43 scalefont setfont
+0450 2940 m
+(                     Parameters for ANNEAL) ltext
+0450 2891 m
+(                     *********************) ltext
+0450 2795 m
+(START OF PARAMETERS:) ltext
+0450 2747 m
+(sisim.out                         \\file with input image\(s\)) ltext
+0450 2699 m
+(ellipsim.out                      \\file with training Image) ltext
+0450 2651 m
+(3   10                            \\debug level, reporting Interval) ltext
+0450 2603 m
+(postsim.dbg                       \\file for debuggubg output) ltext
+0450 2555 m
+(postsim.out                       \\file for output simulation) ltext
+0450 2506 m
+(1                                 \\number of realizations) ltext
+0450 2458 m
+( 25   25  1                       \\nx, ny, nz) ltext
+0450 2410 m
+(69069                             \\random number seed) ltext
+0450 2362 m
+(5   0.000001                      \\maximum iterations, tolerance) ltext
+0450 2314 m
+(4                                 \\number of directions) ltext
+0450 2266 m
+(1  0  0  10                       \\ixl, iyl, izl, nlag) ltext
+0450 2218 m
+(0  1  0  10                       \\ixl, iyl, izl, nlag) ltext
+0450 2170 m
+(1  1  0   5                       \\ixl, iyl, izl, nlag) ltext
+0450 2121 m
+(1 -1  0   5                       \\ixl, iyl, izl, nlag) ltext
+%END OF PAGE
+4.166667 4.166667 scale
+showpage

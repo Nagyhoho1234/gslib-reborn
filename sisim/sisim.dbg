@@ -1,0 +1,72 @@
+
+ Threshold number  1 =        0.500
+           global prob value =   0.1200
+           number of structures =   1
+           nugget effect        =   0.1500
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8500
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  2 =        1.000
+           global prob value =   0.2900
+           number of structures =   1
+           nugget effect        =   0.1000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.9000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  3 =        2.500
+           global prob value =   0.5000
+           number of structures =   1
+           nugget effect        =   0.1000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.9000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  4 =        5.000
+           global prob value =   0.7400
+           number of structures =   1
+           nugget effect        =   0.1000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.9000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  5 =       10.000
+           global prob value =   0.8800
+           number of structures =   1
+           nugget effect        =   0.1500
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8500
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+Data for SISIM: Variable number  3
+  Number of acceptable data  =      140
+  Equal Weighted Average     =       4.3504
+  Equal Weighted Variance    =      44.9243
+
+
+ Finished simulation  1
+     threshold   1 input cdf = 0.1200 realization cdf = 0.2588
+     threshold   2 input cdf = 0.2900 realization cdf = 0.4632
+     threshold   3 input cdf = 0.5000 realization cdf = 0.6900
+     threshold   4 input cdf = 0.7400 realization cdf = 0.8528
+     threshold   5 input cdf = 0.8800 realization cdf = 0.9364
+
+ Summary of order relations: 
+     threshold 1 number =   1363 average =   0.0085 maximum =   0.0704
+     threshold 2 number =   1591 average =   0.0147 maximum =   0.1593
+     threshold 3 number =   1692 average =   0.0156 maximum =   0.0986
+     threshold 4 number =   1923 average =   0.0108 maximum =   0.1063
+     threshold 5 number =   1909 average =   0.0053 maximum =   0.0879
+
+ total of          67.823997% with average of   0.0109

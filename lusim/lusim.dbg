@@ -1,0 +1,155 @@
+
+LUSIM Debugging file
+
+ Node    1: x =    40.250 y =    28.250 z =     0.000
+ Node    2: x =    40.750 y =    28.250 z =     0.000
+ Node    3: x =    41.250 y =    28.250 z =     0.000
+ Node    4: x =    41.750 y =    28.250 z =     0.000
+ Node    5: x =    40.250 y =    28.750 z =     0.000
+ Node    6: x =    40.750 y =    28.750 z =     0.000
+ Node    7: x =    41.250 y =    28.750 z =     0.000
+ Node    8: x =    41.750 y =    28.750 z =     0.000
+ Node    9: x =    40.250 y =    29.250 z =     0.000
+ Node   10: x =    40.750 y =    29.250 z =     0.000
+ Node   11: x =    41.250 y =    29.250 z =     0.000
+ Node   12: x =    41.750 y =    29.250 z =     0.000
+ Node   13: x =    40.250 y =    29.750 z =     0.000
+ Node   14: x =    40.750 y =    29.750 z =     0.000
+ Node   15: x =    41.250 y =    29.750 z =     0.000
+ Node   16: x =    41.750 y =    29.750 z =     0.000
+ Covariance between Node    1 and    1 =  1.000000
+ Covariance between Node    1 and    2 =  0.740050
+ Covariance between Node    1 and    3 =  0.680400
+ Covariance between Node    1 and    4 =  0.621350
+ Covariance between Node    1 and    5 =  0.740050
+ Covariance between Node    1 and    6 =  0.715289
+ Covariance between Node    1 and    7 =  0.666395
+ Covariance between Node    1 and    8 =  0.611844
+ Covariance between Node    1 and    9 =  0.680400
+ Covariance between Node    1 and   10 =  0.666395
+ Covariance between Node    1 and   11 =  0.631426
+ Covariance between Node    1 and   12 =  0.586011
+ Covariance between Node    1 and   13 =  0.621350
+ Covariance between Node    1 and   14 =  0.611844
+ Covariance between Node    1 and   15 =  0.586011
+ Covariance between Node    1 and   16 =  0.549260
+ Covariance between Node    2 and    2 =  1.000000
+ Covariance between Node    2 and    3 =  0.740050
+ Covariance between Node    2 and    4 =  0.680400
+ Covariance between Node    2 and    5 =  0.715289
+ Covariance between Node    2 and    6 =  0.740050
+ Covariance between Node    2 and    7 =  0.715289
+ Covariance between Node    2 and    8 =  0.666395
+ Covariance between Node    2 and    9 =  0.666395
+ Covariance between Node    2 and   10 =  0.680400
+ Covariance between Node    2 and   11 =  0.666395
+ Covariance between Node    2 and   12 =  0.631426
+ Covariance between Node    2 and   13 =  0.611844
+ Covariance between Node    2 and   14 =  0.621350
+ Covariance between Node    2 and   15 =  0.611844
+ Covariance between Node    2 and   16 =  0.586011
+ Covariance between Node    3 and    3 =  1.000000
+ Covariance between Node    3 and    4 =  0.740050
+ Covariance between Node    3 and    5 =  0.666395
+ Covariance between Node    3 and    6 =  0.715289
+ Covariance between Node    3 and    7 =  0.740050
+ Covariance between Node    3 and    8 =  0.715289
+ Covariance between Node    3 and    9 =  0.631426
+ Covariance between Node    3 and   10 =  0.666395
+ Covariance between Node    3 and   11 =  0.680400
+ Covariance between Node    3 and   12 =  0.666395
+ Covariance between Node    3 and   13 =  0.586011
+ Covariance between Node    3 and   14 =  0.611844
+ Covariance between Node    3 and   15 =  0.621350
+ Covariance between Node    3 and   16 =  0.611844
+ Covariance between Node    4 and    4 =  1.000000
+ Covariance between Node    4 and    5 =  0.611844
+ Covariance between Node    4 and    6 =  0.666395
+ Covariance between Node    4 and    7 =  0.715289
+ Covariance between Node    4 and    8 =  0.740050
+ Covariance between Node    4 and    9 =  0.586011
+ Covariance between Node    4 and   10 =  0.631426
+ Covariance between Node    4 and   11 =  0.666395
+ Covariance between Node    4 and   12 =  0.680400
+ Covariance between Node    4 and   13 =  0.549260
+ Covariance between Node    4 and   14 =  0.586011
+ Covariance between Node    4 and   15 =  0.611844
+ Covariance between Node    4 and   16 =  0.621350
+ Covariance between Node    5 and    5 =  1.000000
+ Covariance between Node    5 and    6 =  0.740050
+ Covariance between Node    5 and    7 =  0.680400
+ Covariance between Node    5 and    8 =  0.621350
+ Covariance between Node    5 and    9 =  0.740050
+ Covariance between Node    5 and   10 =  0.715289
+ Covariance between Node    5 and   11 =  0.666395
+ Covariance between Node    5 and   12 =  0.611844
+ Covariance between Node    5 and   13 =  0.680400
+ Covariance between Node    5 and   14 =  0.666395
+ Covariance between Node    5 and   15 =  0.631426
+ Covariance between Node    5 and   16 =  0.586011
+ Covariance between Node    6 and    6 =  1.000000
+ Covariance between Node    6 and    7 =  0.740050
+ Covariance between Node    6 and    8 =  0.680400
+ Covariance between Node    6 and    9 =  0.715289
+ Covariance between Node    6 and   10 =  0.740050
+ Covariance between Node    6 and   11 =  0.715289
+ Covariance between Node    6 and   12 =  0.666395
+ Covariance between Node    6 and   13 =  0.666395
+ Covariance between Node    6 and   14 =  0.680400
+ Covariance between Node    6 and   15 =  0.666395
+ Covariance between Node    6 and   16 =  0.631426
+ Covariance between Node    7 and    7 =  1.000000
+ Covariance between Node    7 and    8 =  0.740050
+ Covariance between Node    7 and    9 =  0.666395
+ Covariance between Node    7 and   10 =  0.715289
+ Covariance between Node    7 and   11 =  0.740050
+ Covariance between Node    7 and   12 =  0.715289
+ Covariance between Node    7 and   13 =  0.631426
+ Covariance between Node    7 and   14 =  0.666395
+ Covariance between Node    7 and   15 =  0.680400
+ Covariance between Node    7 and   16 =  0.666395
+ Covariance between Node    8 and    8 =  1.000000
+ Covariance between Node    8 and    9 =  0.611844
+ Covariance between Node    8 and   10 =  0.666395
+ Covariance between Node    8 and   11 =  0.715289
+ Covariance between Node    8 and   12 =  0.740050
+ Covariance between Node    8 and   13 =  0.586011
+ Covariance between Node    8 and   14 =  0.631426
+ Covariance between Node    8 and   15 =  0.666395
+ Covariance between Node    8 and   16 =  0.680400
+ Covariance between Node    9 and    9 =  1.000000
+ Covariance between Node    9 and   10 =  0.740050
+ Covariance between Node    9 and   11 =  0.680400
+ Covariance between Node    9 and   12 =  0.621350
+ Covariance between Node    9 and   13 =  0.740050
+ Covariance between Node    9 and   14 =  0.715289
+ Covariance between Node    9 and   15 =  0.666395
+ Covariance between Node    9 and   16 =  0.611844
+ Covariance between Node   10 and   10 =  1.000000
+ Covariance between Node   10 and   11 =  0.740050
+ Covariance between Node   10 and   12 =  0.680400
+ Covariance between Node   10 and   13 =  0.715289
+ Covariance between Node   10 and   14 =  0.740050
+ Covariance between Node   10 and   15 =  0.715289
+ Covariance between Node   10 and   16 =  0.666395
+ Covariance between Node   11 and   11 =  1.000000
+ Covariance between Node   11 and   12 =  0.740050
+ Covariance between Node   11 and   13 =  0.666395
+ Covariance between Node   11 and   14 =  0.715289
+ Covariance between Node   11 and   15 =  0.740050
+ Covariance between Node   11 and   16 =  0.715289
+ Covariance between Node   12 and   12 =  1.000000
+ Covariance between Node   12 and   13 =  0.611844
+ Covariance between Node   12 and   14 =  0.666395
+ Covariance between Node   12 and   15 =  0.715289
+ Covariance between Node   12 and   16 =  0.740050
+ Covariance between Node   13 and   13 =  1.000000
+ Covariance between Node   13 and   14 =  0.740050
+ Covariance between Node   13 and   15 =  0.680400
+ Covariance between Node   13 and   16 =  0.621350
+ Covariance between Node   14 and   14 =  1.000000
+ Covariance between Node   14 and   15 =  0.740050
+ Covariance between Node   14 and   16 =  0.680400
+ Covariance between Node   15 and   15 =  1.000000
+ Covariance between Node   15 and   16 =  0.740050
+ Covariance between Node   16 and   16 =  1.000000

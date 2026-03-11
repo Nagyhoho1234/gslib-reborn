@@ -1,0 +1,352 @@
+%!PS                                 %    Remove     
+90 234 translate 1.5 1.5 scale       %  these lines  
+                                     % for EPSF file 
+%!PS-Adobe-3.0 EPSF-3.0
+%%BoundingBox: 0 0 288 216
+%%Creator: GSLIB
+%%Title:   Semivariogram           tail:secondary -
+%%CreationDate: 
+%%EndComments
+
+
+%
+%
+%
+
+/m {moveto} def /l {lineto} def /r {rlineto} def
+/s {stroke} def /n {newpath} def /c {closepath} def
+/rtext{ dup stringwidth pop -1 div 0 rmoveto show } def
+/ctext{ dup stringwidth pop -2 div 0 rmoveto show } def
+/ltext{show} def /gr{grestore} def /gs{gsave} def
+/tr{translate} def /setc{setrgbcolor} def
+/bullet{ 6 0 360 arc c fill } def
+
+
+%72 72 translate
+
+
+0.240000 0.240000 scale
+gsave /Symbol findfont 100 scalefont setfont 0 501 m (g) rtext grestore
+/Helvetica             findfont   31 scalefont setfont
+  690    16 m
+(Distance) ctext
+/Helvetica-BoldOblique findfont   37 scalefont setfont
+  188   881 m
+(Semivariogram           tail:secondary -  head:secondary -   direction  1) ltext
+ 3.719 setlinewidth
+n
+  188   874 m
+  188   128 l
+ 1191   128 l
+s
+ 1.981 setlinewidth
+n
+  188   128 m
+  188   109 l
+s
+/Helvetica             findfont   31 scalefont setfont
+  188    79 m
+(0.0) ctext
+n
+  238   128 m
+  238   118 l
+s
+n
+  288   128 m
+  288   118 l
+s
+n
+  339   128 m
+  339   118 l
+s
+n
+  389   128 m
+  389   109 l
+s
+  389    79 m
+(2.0) ctext
+n
+  439   128 m
+  439   118 l
+s
+n
+  489   128 m
+  489   118 l
+s
+n
+  539   128 m
+  539   118 l
+s
+n
+  589   128 m
+  589   109 l
+s
+  589    79 m
+(4.0) ctext
+n
+  639   128 m
+  639   118 l
+s
+n
+  690   128 m
+  690   118 l
+s
+n
+  740   128 m
+  740   118 l
+s
+n
+  790   128 m
+  790   109 l
+s
+  790    79 m
+(6.0) ctext
+n
+  840   128 m
+  840   118 l
+s
+n
+  890   128 m
+  890   118 l
+s
+n
+  940   128 m
+  940   118 l
+s
+n
+  990   128 m
+  990   109 l
+s
+  990    79 m
+(8.0) ctext
+n
+ 1041   128 m
+ 1041   118 l
+s
+n
+ 1091   128 m
+ 1091   118 l
+s
+n
+ 1141   128 m
+ 1141   118 l
+s
+n
+ 1191   128 m
+ 1191   109 l
+s
+ 1191    79 m
+(10.0) ctext
+n
+  188   128 m
+  162   128 l
+s
+  157   128 m
+(0.000) rtext
+n
+  188   145 m
+  174   145 l
+s
+n
+  188   163 m
+  174   163 l
+s
+n
+  188   180 m
+  174   180 l
+s
+n
+  188   198 m
+  174   198 l
+s
+n
+  188   215 m
+  162   215 l
+s
+  157   215 m
+(0.100) rtext
+n
+  188   233 m
+  174   233 l
+s
+n
+  188   250 m
+  174   250 l
+s
+n
+  188   267 m
+  174   267 l
+s
+n
+  188   285 m
+  174   285 l
+s
+n
+  188   302 m
+  162   302 l
+s
+  157   302 m
+(0.200) rtext
+n
+  188   320 m
+  174   320 l
+s
+n
+  188   337 m
+  174   337 l
+s
+n
+  188   354 m
+  174   354 l
+s
+n
+  188   372 m
+  174   372 l
+s
+n
+  188   389 m
+  162   389 l
+s
+  157   389 m
+(0.300) rtext
+n
+  188   407 m
+  174   407 l
+s
+n
+  188   424 m
+  174   424 l
+s
+n
+  188   441 m
+  174   441 l
+s
+n
+  188   459 m
+  174   459 l
+s
+n
+  188   476 m
+  162   476 l
+s
+  157   476 m
+(0.400) rtext
+n
+  188   494 m
+  174   494 l
+s
+n
+  188   511 m
+  174   511 l
+s
+n
+  188   529 m
+  174   529 l
+s
+n
+  188   546 m
+  174   546 l
+s
+n
+  188   563 m
+  162   563 l
+s
+  157   563 m
+(0.500) rtext
+n
+  188   581 m
+  174   581 l
+s
+n
+  188   598 m
+  174   598 l
+s
+n
+  188   616 m
+  174   616 l
+s
+n
+  188   633 m
+  174   633 l
+s
+n
+  188   650 m
+  162   650 l
+s
+  157   650 m
+(0.600) rtext
+n
+  188   668 m
+  174   668 l
+s
+n
+  188   685 m
+  174   685 l
+s
+n
+  188   703 m
+  174   703 l
+s
+n
+  188   720 m
+  174   720 l
+s
+n
+  188   738 m
+  162   738 l
+s
+  157   738 m
+(0.700) rtext
+n
+  188   755 m
+  174   755 l
+s
+n
+  188   772 m
+  174   772 l
+s
+n
+  188   790 m
+  174   790 l
+s
+n
+  188   807 m
+  174   807 l
+s
+n
+  188   825 m
+  162   825 l
+s
+  157   825 m
+(0.800) rtext
+n
+  188   842 m
+  174   842 l
+s
+n
+  188   859 m
+  174   859 l
+s
+n 0288 0167 bullet
+n 0389 0259 bullet
+n 0489 0390 bullet
+n 0589 0534 bullet
+n 0690 0661 bullet
+n 0790 0759 bullet
+n 0890 0825 bullet
+n 0990 0861 bullet
+n 1091 0874 bullet
+n 1191 0873 bullet
+ 1.250 setlinewidth
+n
+  288   167 m
+  389   259 l
+  489   390 l
+  589   534 l
+  690   661 l
+  790   759 l
+  890   825 l
+  990   861 l
+ 1091   874 l
+ 1191   873 l
+s

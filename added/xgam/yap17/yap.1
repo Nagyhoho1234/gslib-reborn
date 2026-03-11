@@ -1,0 +1,163 @@
+.TH YAP 1 "10 Jun 1994" "Stanford Earth Sciences"
+.SH NAME
+yap \- display and print 2D slices of 3D grids
+.SH SYNOPSIS
+.B yap
+[
+.B \-h
+] [ 
+.B \-d
+] [ 
+.B \-change_trim
+] [ 
+.B \-cc
+.I nbclass
+] [
+.B \-cmap
+.I colormap_file
+] [
+.B \+/-line
+] [ 
+.B \+/-stat
+] [ 
+.B \+/-quant
+] [ 
+.I file...
+]
+.SH DESCRIPTION
+XWindow program displaying and printing 2D slices from 3D grids.
+.LP
+The current version of yap is 1.7.
+.SH OPTIONS
+.TP 5
+.B \-h
+
+Print usage message.
+.TP 5
+.B \-d
+
+Show default options.
+.TP 4
+.B \-cc
+.I numberofclasses
+
+Specifies the number of classes
+.TP 6
+.B \-cmap
+.I colormap_file
+
+Specifies the colormap file to load.
+The file is searched by default in the directory specified by 
+the environmental variable CMAP_DIR or the variable _CMAP_DIR
+defined in yaconfig.h.
+
+The specified path is used if:
+
+- The full absolute path name is given (/users/me/MYCMAPS/mine.cmap)
+
+- The name starts with ./ (./mine.cmap)
+
+- The name starts with .. (../MYCMAPS/mine.cmap)
+.TP 4
+.B \+/-line
+
+Forces or bypasses the displaying of lines
+.TP 4
+.B \+/-stat
+
+Forces or bypasses the computation of statistics (the histograms cannot
+be displayed if -stat is specified)
+.TP 4
+.B \+/-quant
+
+Forces or bypasses the computation of quantiles
+.TP 0
+The default for these three options are defined in the file yaconfig.h.
+
+.SH EXAMPLE
+.TP 5
+.B yap
+runs the program and waits form you to open a file (menu
+.I File
+)
+.TP 5
+.B yap filename
+runs the program ad loads directly the file. The default colormap defined in
+yaconfig.h (
+.B _CMAP_DEF
+) is used.
+.TP 5
+.B yap filename -cc 30 -cmap ./mine.cmap
+runs the program with the given file, with 30 classes using the colormap
+mine.cmap in the current directory
+.TP 5
+.B yap filename -cc 30 -cmap b2w.cmap
+runs the program with the given file, with 30 classes using the colormap
+b2w.cmap located in the directory specified either by the CMAP_DIR
+environmental variable or by the #define in yaconfig.h
+.SH ENVIRONMENT
+.TP 5
+.B CMAP_DIR
+specifies the location of the colormap files.
+If it is not defined, the program will look for the variable _CMAP_DIR
+defined in yaconfig.h.
+Finally, it will look in the current directory.
+.SH FILES
+
+Some default values are defined in
+.B yaconfig.h
+.RE
+.TP 15
+Value
+default
+
+.RE
+.TP 16
+.B _HELP_FILE
+/usr/local/bin/yap/yap.hlp        Help file
+.RE
+.TP 16
+.B _CMAP_DIR
+/usr/local/bin/yap                Colormap directory
+.RE
+.TP 16
+.B _CMAP_DEF
+/usr/local/bin/yap/rainbow.cmap   Default colormap
+.RE
+.TP 16
+.B T_MIN and T_MAX
+-9999. and 9999.                  Default trimming limits
+.RE
+.TP 16
+.B ANGLE
+1.0471976 radians                 Default angle for 3D view
+.RE
+.TP 16
+.B NB_LABEL
+10                                Default number of labels on the colormap
+.RE
+.TP 16
+.B COMP_STAT
+TRUE                              Compute statistics by default
+.RE
+.TP 16
+.B COMP_QUANT
+FALSE                             Don't compute quantiles by default
+.RE
+.TP 16
+.B SHOW_LINE
+FALSE                             Don't show lines by default
+.SH AUTHOR
+               Manu Schnetzler
+
+Stanford Center for Reservoir Forecasting (SCRF)
+   Stanford University, Stanford, California
+.LP
+Contact:
+.B marsu@earthling.net
+.LP
+.SH REMARKS
+No checking is performed on the outputs files. If they already exist, they
+are erased.
+.SH BUGS
+Too many, unfortunately.

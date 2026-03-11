@@ -1,0 +1,360 @@
+! .Xdefaults -- Specify default settings for X application programs.
+!
+! DESCRIPTION
+!
+!   This file is read by xrdb, the X Resource DataBase program.  It specifies
+!   default values for a wide variety of options used by most X programs.
+!   Thus, instead of having to type out the options every time you execute
+!   your favorite programs, you only have to enter them here and the programs
+!   will inherit them automatically through the X server.
+!
+! CUSTOMIZATION
+!
+!   Feel free to copy this file to your home directory and then modify it
+!   as you like.  Make sure you call xrdb on this file somewhere in your
+!   X startup scripts.  If you use the standard "x" and ".xsession" programs
+!   to start up the X Window System, and if you store your version of this
+!   file as ".Xdefaults" in your home directory, then it will be read
+!   automatically at start-up.
+!
+!   Type "man xrdb" and "man x" for more information.
+!
+! AUTHORS
+!
+!   Created in April, 1989, by George Drapeau (drapeau@jessica.stanford.edu)
+!   and Keith Bartell (bartell@jessica.stanford.edu) for Stanford University,
+!   Academic Information Resources.
+
+
+!	Global defaults -- Specifications that start with an asterisk (*)
+!		apply to almost all X programs.  This is a good place to
+!		select default fonts and colors for your environment.
+!
+! For terminal windows that fit side-by-side on the screen,
+!! try changing "14" to "12" in the next two lines.
+*Font:				*courier-bold-r-normal--12*
+!*Font:				Rom14.500
+!*BoldFont:			*helvetica-bold-r-normal--14*
+!*BorderWidth:			2
+Memo*font:              *helvetica-bold-r-normal--12*
+
+#ifdef COLOR
+!		If we're on a color workstation...
+!	*Foreground:		gray20
+!	*Background:		DarkSlateGrey
+!	*Background:		gray80
+	*borderColor:		LimeGreen
+	*cursorColor:		red
+	*pointerColor:		red
+#else
+!		Otherwise, default to black characters on white background,
+!		since reverse video doesn't work well with all applications
+!		(though we override this for xterm, etc below).
+	*ReverseVideo:		off
+!	*Foreground:		black
+!	*Background:		white
+#endif
+
+
+!	xterm defaults (applies to all terminal emulators that are of the
+!	class "XTerm".  This includes the particular instance we call the
+!	"console" (see below) and the Kanji terminal emulator "kterm".
+xterm*Foreground:		yellow
+xterm*Background:		DarkSlateBlue
+xterm*menuFont:			*helvetica-medium-r-normal--12*
+!xterm*geometry:			80x24
+!xterm*iconGeometry:		-161+49
+xterm*iconName:			The Happy XTerm
+xterm*jumpScroll:		on
+xterm*scrollBar:        on
+#ifndef COLOR
+xterm*reverseVideo:		on
+xterm*Foreground:		white
+xterm*Background:		black
+#endif
+
+
+!	xclock defaults
+!xclock*font:			*helvetica-bold-r-normal--24*
+xclock*chime:			true
+xclock*analog:			true
+xclock*update:			2
+xclock*geometry:		120x120-0+0
+!xclock*:				red
+xclock*boardwidth:      15
+xclock*foreground:		red 
+xclock*background:		yelllow
+xclock*hand:			blue
+xclock*reverseVideo:		off
+
+! xbiff
+xbiff*foreground: pink
+xbiff*background: yellow
+xbiff*geometry: 120x120-0+120
+
+xmessage.title: Message From Emmanuel Gringarten
+xmessage.width: 600
+xmessage.height: 200
+
+!	xload defaults
+xload*geometry:			120x120-120+0
+xload*foreground: pink 
+#ifndef COLOR
+xload*reverseVideo:		on
+#endif
+
+!   xdvi defaults
+xdvi.background:  blue 
+xdvi.foreground:  cyan
+xdvi.margins:     0.2
+xdvi.geometry:    +50-0
+
+! xrnMotif
+!xrn*leaveHeaders: subject,from,date
+!xrn*artButtonList: artQuit
+
+
+ghostview*showTitle: false
+ghostview*showDate: false
+ghostview*horizonalMargin: 0
+ghostview*verticalMargin: 0
+
+
+! xrwho
+
+xrwho*foreground:		black
+xrwho*background:		skyblue
+xrwho*borderColor:		black
+xrwho*host.foreground:		white
+xrwho*host.background:		blue
+xrwho*Label*borderWidth:	0
+xrwho*vSpace:			2
+xrwho*font:			-*-helvetica-*-r-*-*-*-120-*-*-*-*-*-*
+xrwho*host.font:		-*-helvetica-*-r-*-*-*-120-*-*-*-*-*-*
+xrwho*snoop.foreground:		red
+
+DXsession.x:	312
+DXsession.y:	381
+
+! Mwm fonts
+Mwm*fontList:		-*-times-Bold-R-Normal--*-140-*-*-*-*-ISO8859-1
+Mwm*default*fontList:	-*-times-Bold-R-Normal--*-140-*-*-*-*-ISO8859-1
+
+! Set to Explicit to determine focus by clicking on the window or border
+! Set to Pointer to determine focus based on the location of the pointer
+Mwm*keyboardFocusPolicy:		pointer
+
+! Policy when the window with focus is minimized or removed
+! if focuspolicy is explicit, set to true to give focus to
+! the window with previous focus
+Mwm*autoKeyFocus: True
+
+! Set to True to raise a window when it is given focus
+! Set to False to keep the stacking order the same when a window is given focus
+Mwm*focusAutoRaise: False
+
+! if focuspolicy is explicit, 
+! set to true to give input focus to a window when it is mapped
+!Mwm*startupKeyfocus: True
+
+! Border decorations
+! Set to all for all decorations
+! Set to any of the following to limit decorations:
+!    maximize minimize resizeh border menu title
+! Set to none for no decorations
+! If set to none, removes all decortations. This permits the user to
+! set what windows will have what borders.
+!Mwm*clientDecoration: all
+
+! Set to True for compatibility for running XUI applications
+Mwm*useDECMode: True
+
+!
+! Size of resize border
+Mwm*resizeBorderWidth:		7
+Mwm*frameBorderWidth:		7
+
+!Mwm*transientDecoration: Title resize
+Mwm*workspaceMenu: True
+
+Mwm*restartSettings: True
+Mwm*systemButtonClick: True
+Mwm*systemButtonClick2: False
+
+! Double-click on window menu (on border of window)
+! Set to true to enable double-click on window menu to "close" a window
+Mwm*wMenuButtonClick2: False
+
+!!!!!!!!!!!!!!! Include mwmrc
+! Configuration file
+! contains definition of window and root menus and bindings
+Mwm*configFile: ~/.mwmrc
+
+! Default bindings as defined in the configuration file
+!Mwm*buttonBindings: DefaultButtonBindings
+!Mwm*keyBindings:			MyKeyBindings
+Mwm*buttonBindings:			PointerButtonBindings
+Mwm*keyBindings: DefaultKeyBindings
+
+! Definition for Window menu on the border of a window
+Mwm*windowMenu: DefaultWindowMenu
+
+! Definition for System menu when MB1 is pressed on the screen
+!Mwm*systemMenu: RootMenu
+
+Mwm*matteWidth:				4
+Mwm*default*matteWidth:			5
+Mwm*moveThreshold:			3
+!Mwm*client*borderColor:		gray	
+Mwm*interactivePlacement:	False
+Mwm*clientAutoPlace:        false
+Mwm*autoRaiseDelay:		500
+Mwm*cleanText:			true
+Mwm*XClock.clientDecoration:        none
+Mwm*xconsole.clientDecoration:        none
+Mwm*xrwho*clientDecoration:        none
+Mwm*XLoad*clientDecoration:     none
+Mwm*xbiff*clientDecoration:     none
+
+!lilian's
+!Mwm*activeBackground:			Orchid
+!Mwm*default*activeBackground:		DarkOrchid
+!Mwm*activeBottomShadowColor:		Black
+!Mwm*default*activeBottomShadowColor:	Black
+!Mwm*activeForeground:			Yellow
+!Mwm*default*activeForeground:		Black
+!Mwm*activeTopShadowColor:		White
+!Mwm*default*activeTopShadowColor:	White
+!Mwm*foreground: Black
+!
+!Mwm*background:				gray
+!Mwm*default*background:			White
+!Mwm*bottomShadowColor:			Black
+!Mwm*default*bottomShadowColor:		Black
+!Mwm*Foreground:				Black
+!Mwm*default*Foreground:			Black
+!Mwm*matteBackground:			LightGrey
+!Mwm*default*matteBackground:		LightGrey
+!Mwm*matteBottomShadowColor:		SteelBlue
+!Mwm*default*matteBottomShadowColor:	SteelBlue
+!Mwm*matteForeground:			White
+!Mwm*default*matteForeground:		White
+!Mwm*matteTopShadowColor:		Black
+!Mwm*default*matteTopShadowColor:	Black
+!Mwm.matteBottomShadowPixmap:		slant_left
+!Mwm.matteTopShadowPixmap:		slant_left
+Mwm*resizeCursors:			False
+Mwm*showFeedback:			all
+Mwm*focusPolicyResource:		True
+!
+!! ICONS AND ICON BOX
+Mwm*useClientIcon:			True
+Mwm*iconClick:				true
+! Set to True to display icon box
+! Set to False to displays icons without the icon box
+Mwm*useIconBox: False
+!Mwm*iconBoxTitle:		Box of Icons
+!Mwm*iconBoxSBDisplayPolicy:		vertical
+!Mwm*iconBoxGeometry:			14x1+1+1
+!Mwm*iconBoxName:			iconbox
+!Mwm*iconbox*windowMenu: DefaultWindowMenu
+!Mwm*iconbox*background:			Green
+!Mwm*iconbox*troughColor:		black
+!Mwm*iconbox*XmDrawnButton*highlightColor: Black
+!Mwm*iconbox*hScrollBar*highlightColor: grey
+!Mwm*iconbox*vScrollBar*highlightColor: grey
+!Mwm*iconbox*vScrollBar*width:  12
+!Mwm*iconbox*hScrollBar*height: 12
+!Mwm*iconbox*traversalOn:		True
+!Mwm*iconbox*clientDecoration:		border
+!Mwm*iconImage:				/gs1/jinchi/lib/bitmaps/xlogo32
+Mwm*iconImageMaximum:		50x50
+Mwm*iconImageMinimum:		16x16
+!Mwm*iconImageForeground:		Yellow
+!Mwm*iconImageBackground:		SteelBlue
+!Mwm*iconImageTopShadowColor:		Green
+!Mwm*iconImageTopShadowPixmap:		50_foreground
+!Mwm*iconImageBottomShadowColor:		SteelBlue
+!Mwm*iconImageBottomShadowPixmap:50_foreground
+!Mwm*iconLabelBackground:		Green
+!Mwm*iconLabelForeground:		Red
+Mwm*icon*fontList:	-adobe-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-*
+Mwm*icon*activeBackgroundPixmap:		background
+Mwm*icon*activeTopShadowColor:			Black
+Mwm*icon*activeTopShadowPixmap:			50_foreground
+! How to place icons when a window is minimized
+! Set to left top for top of screen left to right
+! Set to left bottom for bottom of screen left to right
+! Set to right top for top of screen right to left
+! Set to right bottom for bottom of screen right to left
+! Set to top left for left of screen top to bottom 
+! Set to top right for right of screen top to bottom
+! Set to bottom left for left of screen bottom to top
+! Set to bottom right for right of screen bottom to top
+Mwm*iconPlacement:		left bottom
+! Icon decorations
+! Set to all or any of the following to control what is displayed with an icon
+! activelabel label image
+Mwm*iconDecoration:	activelabel label image
+! Set to True to place icons according to iconPlacement resource
+! Set to False for interactive arrangement
+Mwm*iconAutoPlace: True             
+! Set to numbers of pixels between the edge of screen and the icons
+Mwm*iconPlacementMargin: 5
+! if focuspolicy is explicit, set to true to give a window focus 
+! when it is restored from an icon
+Mwm*deiconifyKeyFocus: True
+Mwm*lowerOnIconify:			True
+! Set to true to gray icons in the iconbox 
+! when the icons are not in the minimized state
+Mwm*fadeNormalIcon: True
+!Mwm*xterm*iconImage:	/gs1/jinchi/lib/bitmaps/xterm.xbm
+!Mwm*Xgam*iconImage:	/gs0/jinchi/dist/xgam/xgam.xbm
+!Mwm*Xv2d*iconImage:	/gs0/jinchi/dist/xv2d/xv2d.xbm
+!Mwm*Xv3d*iconImage:	/gs0/jinchi/dist/xv3d/xv3d.xbm
+
+! Gray scale monitor such as NeXTstation
+#ifndef COLOR
+! Active window border and active icon border colors
+!Mwm*activeForeground: gray15
+!Mwm*activeBackground: gray55
+!Mwm*activeTopShadowColor: gray75
+!Mwm*activeBottomShadowColor: gray30
+Mwm*activeForeground: yellow
+Mwm*activeBackground: red   
+Mwm*activeTopShadowColor: pink
+Mwm*activeBottomShadowColor: blue
+
+! Window manager menu colors
+Mwm*menu*foreground: gray15
+Mwm*menu*background: gray55
+Mwm*menu*topShadowColor: gray75
+Mwm*menu*bottomShadowColor: gray30
+         
+! Icon image and label colors
+Mwm*iconImageForeground: gray15
+Mwm*iconImageBackground: gray65
+Mwm*iconImageTopShadowColor: gray80
+Mwm*iconImageBottomShadowColor: gray35
+Mwm*iconLabelForeground: gray15 
+Mwm*iconLabelBackground: gray65
+Mwm*iconTopShadowColor: gray80
+Mwm*iconBottomShadowColor: gray35
+
+! Inactive border colors
+!Mwm*foreground: gray15
+!Mwm*background: gray65
+!Mwm*topShadowColor: gray80
+!Mwm*bottomShadowColor: gray35
+Mwm*foreground: pink
+Mwm*background: yellow
+Mwm*topShadowColor: blue
+Mwm*bottomShadowColor: red
+
+! Matte colors
+Mwm*matteForeground: gray15
+Mwm*matteBackground: gray65
+Mwm*matteTopShadowColor: gray80
+Mwm*matteBottomShadowColor: gray35
+
+#endif ! COLOR

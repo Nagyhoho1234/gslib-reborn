@@ -1,0 +1,46 @@
+1.0a ------> Not released                             (June, 93)
+     First version (for X-Window class, Steve Horne, Stanford)
+1.0b ------> Not released                             (September, 93)
+     Minor corrections and modifications (for BPX Alaska, Steve Begg)
+     Modified: works on HP-UX and AIX
+     Added:    STEVE format
+1.1  ------> Not released                             (October, 93)
+     Added:    scalable postscript output
+     Added:    filename on command line
+1.2  ------> Released in /gs1/scrf/graphlib/yap       (November 29, 93)
+     Added:    char binary format
+     Added:    location by clicking
+     Added:    command line arguments (few)
+1.3a ------> Not released                             (November 30, 93)
+                          (hey, that's my birthday... Happy birthday, Manu)
+     Added:    Statistics on slices (histograms)
+1.3b ------> Not released                             (November 30, 93)
+     Added:    Statistics on 3D
+1.4  ------> Released                                 (December  2, 93)
+     Added:    Calculation of some statistics, dump to file
+1.5  ------> Not released                             (December 17, 93)
+     Added:    Timer
+     Added:    Colormap on command line
+     Rem:      Given to Steve along with 1.2
+1.5b ------> Released version13                       (February  14, 94)
+     Added:    -nostat option
+     Added:    application file
+     Added:    logarithmic scale
+     Added:    Checking of yaconfig.h
+     Fixed:    gsl2bin.c, minor bugs
+     Modified: to run on SGI
+     Modified: User's guide
+1.6  ------> Released version12                       (March      4, 94)
+     Added:    scaling of twoD slices
+     Added:    lines on twoD slices
+     Modified: code cleaning (prototyping)
+1.7  ------> "Final" version. Yeah, i know, i'll play with yap my whole life.
+                                                      (June       6, 94)
+     I don't know what i did on this one. Bug cleaning mainly.
+     
+     
+--------------------------------------------------------------------------------
+  To do:                                    Priority
+    bugs cleaning                              1
+    code cleaning                              1            V partly
+    postscript output for histograms           3

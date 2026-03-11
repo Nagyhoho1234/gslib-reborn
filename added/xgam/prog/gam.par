@@ -1,0 +1,30 @@
+                  Parameters for GAM
+                  ******************
+
+START OF PARAMETERS:
+../xcase/data.out      -file with data
+1   2                -   number of variables, column numbers
+-1.0e21     1.0e21    -   trimming limits
+gam.out               -file for variogram output
+1                     -grid or realization number
+50   0.5   1.0        -nx, xmn, xsiz
+50   0.5   1.0        -ny, ymn, ysiz
+10   0.5   1.0        -nz, zmn, zsiz
+2  30                 -number of directions, number of lags
+1  0  0              -ixd(1),iyd(1),izd(1)
+0  1  0              -ixd(2),iyd(2),izd(2)
+1                     -standardize sill? (0=no, 1=yes)
+1                     -number of variograms
+1   1   1             -tail variable, head variable, variogram type
+
+
+type 1 = traditional semivariogram
+     2 = traditional cross semivariogram
+     3 = covariance
+     4 = correlogram
+     5 = general relative semivariogram
+     6 = pairwise relative semivariogram
+     7 = semivariogram of logarithms
+     8 = semimadogram
+     9 = indicator semivariogram - continuous
+     10= indicator semivariogram - categorical

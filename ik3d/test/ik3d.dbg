@@ -1,0 +1,108 @@
+
+ Threshold number  1 =        0.159
+           global prob value =   0.1000
+           number of structures =   2
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       0.5000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+           type of structure   2 =   1
+           aa parameter         =      30.0000
+           cc parameter         =       0.5000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  2 =        0.278
+           global prob value =   0.2000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  3 =        0.515
+           global prob value =   0.3000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  4 =        0.918
+           global prob value =   0.4000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  5 =        1.211
+           global prob value =   0.5000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  6 =        1.708
+           global prob value =   0.6000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  7 =        2.325
+           global prob value =   0.7000
+           number of structures =   1
+           nugget effect        =   0.0000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       1.0000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  8 =        3.329
+           global prob value =   0.8000
+           number of structures =   1
+           nugget effect        =   0.4000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       0.6000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  9 =        5.384
+           global prob value =   0.9000
+           number of structures =   1
+           nugget effect        =   0.9000
+           type of structure   1 =   1
+           aa parameter         =      11.0000
+           cc parameter         =       0.1000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Summary of order relations (number and magnitude): 
+   Threshold 1 Number =    242 Average =   0.0310 Maximum =   0.1808
+   Threshold 2 Number =    261 Average =   0.0386 Maximum =   0.1835
+   Threshold 3 Number =    275 Average =   0.0619 Maximum =   0.2748
+   Threshold 4 Number =    380 Average =   0.0577 Maximum =   0.2748
+   Threshold 5 Number =    461 Average =   0.0514 Maximum =   0.2748
+   Threshold 6 Number =    617 Average =   0.0507 Maximum =   0.2748
+   Threshold 7 Number =    701 Average =   0.0537 Maximum =   0.2748
+   Threshold 8 Number =    801 Average =   0.0142 Maximum =   0.0811
+   Threshold 9 Number =    830 Average =   0.0446 Maximum =   0.2748
+
+ Total of   20.30% with an average magnitude of   0.0432

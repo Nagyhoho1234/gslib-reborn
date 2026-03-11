@@ -1,0 +1,23 @@
+  channel orientation =   -10.00000      0.0000000E+00   10.00000    
+  channel sinuosity dep =    100.0000       300.0000       500.0000    
+  channel sinuosity len =    3000.000       4000.000       5000.000    
+  channel thickness =    2.000000       5.000000       20.00000    
+  channel thickness undulation =    1.000000       1.000000       1.000000    
+  channel thickness undul len=   1000.000       1000.000       1000.000    
+  channel W/T ratio =    20.00000       40.00000       60.00000    
+  channel width undulation =    1.000000       1.000000       1.000000    
+  channel width undulation len =    500.0000       1000.000       1500.000    
+  levee width =    100.0000       500.0000       1000.000    
+  levee height =   0.1000000      0.1000000      0.1000000    
+  levee depth below channel top =   0.2000000      0.4000000      0.6000000    
+  crevasse attachment length =    80.00000       80.00000       80.00000    
+  crevasse thickness =   0.2500000      0.5000000      0.7500000    
+  crevasse areal dimension =    500.0000       500.0000       500.0000    
+
+Limits of model X:      -0.50     49.50
+                Y:      -0.50     49.50
+   outer limits X:      -8.43     57.42
+                Y:      -8.43     57.42
+       channel dy:     0.7071
+       maximum ny:        131
+    49  0.000000

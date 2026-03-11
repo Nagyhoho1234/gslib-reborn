@@ -1,0 +1,9 @@
+ 
+ Covariance Look up table and search for previously
+ simulated grid nodes.  The maximum range in each 
+ coordinate direction for covariance look up is:
+           X direction:    49.00000    
+           Y direction:    49.00000    
+           Z direction:   0.0000000E+00
+ Node Values are not searched beyond this distance!
+ 

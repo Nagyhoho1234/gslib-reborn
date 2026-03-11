@@ -1,0 +1,67 @@
+                  Parameters for IKSIM
+                  *******************
+
+START OF PARAMETERS:
+1                                \1=continuous(cdf), 0=categorical(pdf)
+5                                \number thresholds/categories
+1.0  3.0  5.0  7.0  10.0        \thresholds/categories
+0.15 0.35 0.50 0.70 0.85        \global cdf/pdf
+data.dat                         \file with data
+0                                \1=indicator data in data file
+1   2   0    3  3                \clns for X,Y,Z, lower & upper limit value
+0                                \1=replace missing value
+-1.0e21   1.0e21                 \trimming limits
+0                                \debugging level for ik3d: 0,1,2,3
+iksim_ik3d.dbg                   \file for debugging output of ik3d
+iksim_ik3d.out                   \file for kriging output
+10   0.5     5.0                 \nx,xmn,xsiz
+10   0.5     5.0                 \ny,ymn,ysiz
+1    0.5     1.0                 \nz,zmn,zsiz
+1    8                           \min, max data for kriging
+20.0  20.0  20.0                 \maximum search radii
+ 0.0   0.0   0.0                 \angles for search ellipsoid
+0                                \max per octant (0-> not used)
+0                                \0=full IK, 1=Median IK
+0                                \0=SK, 1=OK
+1    0.2                         \ cutoff one:   nst, nugget effect
+1    0.8  0.0   0.0   0.0        \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+1    0.2                         \ cutoff two:   nst, nugget effect
+1    0.8  0.0   0.0   0.0        \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+1    0.2                         \      nst, nugget effect
+1    0.8  0.0   0.0   0.0        \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+1    0.2                         \      nst, nugget effect
+1    0.8  0.0   0.0   0.0        \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+1    0.2                         \      nst, nugget effect
+1    0.8  0.0   0.0   0.0        \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+1                                \call for postik? 1=yes
+iksim_postik.out                 \file for postik output
+0.0    20.0                      \minimum and maximum Z value
+1                                \E-type? 1=yes, 0=no
+0   1.5                          \Prob. & mean above threshold(par)? 1=yes, par
+0   0.5                          \P-percentile corresponding to par? 1=yes, par
+0                                \Conditonal variance? 1=yes, 0=no
+1                                \Use default value? 1=yes
+2   0.0                          \lower tail: option, parameter
+1   1.0                          \middle    : option, parameter
+4   20.0                         \upper tail: option, parameter
+100                              \maximum discretization
+0      0                         \do simulation? 1=yes;number of simulations
+69069                            \random number seed
+0                                \debugging level for PFSIMFFT: 0,1,2,3
+iksim_pfsim.dbg                  \output file for debugging PFSIMFFT
+1    0.2                         \variogram for z variable: nst, nugget effect
+1    0.8 0.0   0.0   0.0         \      it,cc,ang1,ang2,ang3
+         10.0  10.0  10.0        \      a_hmax, a_hmin, a_vert
+iksim.out                        \output file of simulations
+0                                -identify target distribution? 1=yes
+0                                -1=use target distribution, 0=use data distribution
+nofile.dat                       -file with reference distribution
+1 0                              -columns for value and weight
+2 2 0                            -wx, wy, wz: window size for tie-breaking
+0.5                              -control parameter
+iksim_trans.out                  output file for transformed distribution

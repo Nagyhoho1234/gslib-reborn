@@ -1,0 +1,73 @@
+------------------------------------------------------------------------------
+yap version 1.5, by Manu Schnetzler, SCRF group at Stanford University,
+marsu@pangea.stanford.edu till june '94
+After that, we'll see. BTW, if you have a job for me...
+------------------------------------------------------------------------------
+
+DESCRIPTION
+
+yap is a xwindow based program designed to display and print 2D slices of
+3D rectangular grids.
+
+INSTALLATION - COMPILATION
+
+To install yap, create a directory to put all the stuff in.
+Put all the stuff in.
+
+Edit the file yaconfig.h and modify the path to the colormap directory,
+default colormap and help file
+    (IMPORTANT)
+
+Edit the Makefile and modify what's needed (Motif libraries and includes)
+    (IMPORTANT)
+A set of Makefiles for different architectures is provided. I didn't have time
+to figure out how to build a Imakefile.
+
+Compile by "make".
+
+APPLICATION FILE
+
+Append yap.ad to your ~/.Xdefaults and run "xrdb ~/.Xdefaults" or copy yap.ad
+as Yap in your application default directory. Don't forget in this case to
+set the environmental variable XAPPLRESDIR to this directory.
+Example:
+   setenv XAPPLRESDIR /usr/local/lib/X11/app-defaults (csh syntax)
+      if yap.ad has been copied as:
+   /usr/local/lib/X11/app-defaults/Yap
+
+RUNNING
+
+Run by "yap options"
+To get a list of the options, type "yap -h"
+
+COPYRIGHT
+
+You may use, copy, modify, distribute this software freely. As for any
+of the code produced in the SCRF group, there is no copyright for this program.
+However, the help module was copied from The North Carolina State University
+Motif Group. Read the file nxhelp.copyright.
+
+STANDARD DISCLAIMER
+
+yap was written first as a project for a XWindow class. It has been then
+modified following mainly the suggestions of the students of the SCRF group.
+I hope you will find it useful but i cannot assure you that it will
+not crash every five minutes.
+
+"In no event shall I, the SCRF group or the Stanford University be liable for
+any special, indirect or consequential damages or any damages whatsoever
+resulting from loss of use, data or profits, whether in an action of contract,
+negligence or other tortious action, arising out of or in connection with the
+use or performance of this software".
+
+I copied this from an other package, sounded neat! (Though a little cold,
+sorry)
+
+PROBLEMS?
+
+I'll be happy to answer any question and try to fix the problems you may find.
+Suggestions are welcome.
+
+Have fun!
+
+Manu

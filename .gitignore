@@ -1,0 +1,22 @@
+# Compiled binaries
+*.exe
+*.o
+*.obj
+*.mod
+*.dll
+*.a
+*.lib
+
+# Archives
+*.tar
+*.zip
+*.gz
+
+# Build output
+bin/
+bin_opt/
+bin_opt2/
+
+# Python cache
+__pycache__/
+*.pyc

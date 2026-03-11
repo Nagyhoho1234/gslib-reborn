@@ -1,0 +1,17 @@
+                  Parameters for POSTIK
+                  *********************
+
+START OF PARAMETERS:
+ik3d.out                         \file with IK3D output (continuous)
+postik.out                       \file for output
+1   0.25                         \output option, output parameter
+5                                \number of thresholds
+1.0  3.0  5.0  7.0  10.0        \the thresholds
+0   1      0.75                  \volume support?, type, varred
+data.dat                         \file with global distribution
+3   0    -1.0   1.0e21           \   ivr,  iwt,  tmin,  tmax
+0.0    20.0                      \minimum and maximum Z value
+1   0.0                          \lower tail: option, parameter
+1   1.0                          \middle    : option, parameter
+1   20.0                         \upper tail: option, parameter
+100                              \maximum discretization

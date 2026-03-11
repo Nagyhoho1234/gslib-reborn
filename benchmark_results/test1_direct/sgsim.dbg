@@ -1,0 +1,17 @@
+
+ Secondary Data: Number of data             =    27432
+                 Equal Weighted Average     =      -0.0009
+                 Equal Weighted Variance    =       0.4839
+
+
+ Transforming Secondary Data with variance reduction of       1.0000
+
+ 
+ Covariance Look up table and search for previously
+ simulated grid nodes.  The maximum range in each 
+ coordinate direction for covariance look up is:
+           X direction:    126000.0    
+           Y direction:    150000.0    
+           Z direction:   0.0000000E+00
+ Node Values are not searched beyond this distance!
+ 

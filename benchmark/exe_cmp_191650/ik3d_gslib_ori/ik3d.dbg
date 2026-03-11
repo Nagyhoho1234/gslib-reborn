@@ -1,0 +1,50 @@
+
+ Threshold number  1 =        1.000
+           global prob value =   0.1500
+           number of structures =   1
+           nugget effect        =   0.2000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  2 =        3.000
+           global prob value =   0.3500
+           number of structures =   1
+           nugget effect        =   0.2000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  3 =        5.000
+           global prob value =   0.5000
+           number of structures =   1
+           nugget effect        =   0.2000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  4 =        7.000
+           global prob value =   0.7000
+           number of structures =   1
+           nugget effect        =   0.2000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000
+
+ Threshold number  5 =       10.000
+           global prob value =   0.8500
+           number of structures =   1
+           nugget effect        =   0.2000
+           type of structure   1 =   1
+           aa parameter         =      10.0000
+           cc parameter         =       0.8000
+           ang1, ang2, ang3     =   0.00  0.00  0.00
+           anis1, anis2         =       1.0000      1.0000

@@ -1,0 +1,11 @@
+#!/usr/bin/csh -f
+cd xjc
+make
+cd ../prog
+make
+make -f makegam
+make -f makevarmap
+cd ../yap17
+make
+cd ../prog
+

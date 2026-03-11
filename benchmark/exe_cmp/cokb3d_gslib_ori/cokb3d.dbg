@@ -1,0 +1,25 @@
+
+ USER input variogram for variables  2 and  2
+      number of structures= 1 nugget effect=       .2000
+      types of structures:  1
+      aa values:                10.0000
+      cc values:                  .8000
+      ang1 values:                .0000
+      ang2 values:                .0000
+      ang3 values:                .0000
+      anis1 values:              1.0000
+      anis2 values:              1.0000
+
+ USER input variogram for variables  1 and  1
+      number of structures= 1 nugget effect=       .2000
+      types of structures:  1
+      aa values:                10.0000
+      cc values:                  .8000
+      ang1 values:                .0000
+      ang2 values:                .0000
+      ang3 values:                .0000
+      anis1 values:              1.0000
+      anis2 values:              1.0000
+
+DEBUGGING COKB3D with:Synthetic point data – 140 samples      
+ Block average covariance        1.000000
