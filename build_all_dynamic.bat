@@ -200,6 +200,38 @@ cd /d "%ROOT%\draw"
 %FC% %FFLAGS% /Fe:"%BINDIR%\draw.exe" draw.f "%LIBDIR%\libgs.lib" >NUL 2>&1
 if errorlevel 1 (echo   FAIL: draw & set /a FAIL+=1) else (echo   OK: draw & set /a OK+=1)
 
+cd /d "%ROOT%\histplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\histplt.exe" histplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: histplt & set /a FAIL+=1) else (echo   OK: histplt & set /a OK+=1)
+
+cd /d "%ROOT%\probplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\probplt.exe" probplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: probplt & set /a FAIL+=1) else (echo   OK: probplt & set /a OK+=1)
+
+cd /d "%ROOT%\qpplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\qpplt.exe" qpplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: qpplt & set /a FAIL+=1) else (echo   OK: qpplt & set /a OK+=1)
+
+cd /d "%ROOT%\scatplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\scatplt.exe" scatplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: scatplt & set /a FAIL+=1) else (echo   OK: scatplt & set /a OK+=1)
+
+cd /d "%ROOT%\locmap"
+%FC% %FFLAGS% /Fe:"%BINDIR%\locmap.exe" locmap.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: locmap & set /a FAIL+=1) else (echo   OK: locmap & set /a OK+=1)
+
+cd /d "%ROOT%\pixelplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\pixelplt.exe" pixelplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: pixelplt & set /a FAIL+=1) else (echo   OK: pixelplt & set /a OK+=1)
+
+cd /d "%ROOT%\vargplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\vargplt.exe" vargplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: vargplt & set /a FAIL+=1) else (echo   OK: vargplt & set /a OK+=1)
+
+cd /d "%ROOT%\bivplt"
+%FC% %FFLAGS% /Fe:"%BINDIR%\bivplt.exe" bivplt.f "%LIBDIR%\libgs.lib" >NUL 2>&1
+if errorlevel 1 (echo   FAIL: bivplt & set /a FAIL+=1) else (echo   OK: bivplt & set /a OK+=1)
+
 echo.
 echo ============================================================
 echo  Build complete. OK: %OK%, FAILED: %FAIL%
