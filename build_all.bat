@@ -1,8 +1,18 @@
 @echo off
 REM ============================================================
 REM  GSLIB2-OPT Master Build Script (Intel oneAPI ifx)
-REM  Static OpenMP linking - standalone, no DLL needed
-REM  Output: bin_opt/ (~1.6 GB, fully self-contained)
+REM  Output: bin_opt/ (self-contained: libiomp5md.dll copied alongside)
+REM
+REM  NOTE: /Qopenmp-link:static below is now a silently-ignored remark
+REM  on this Intel oneAPI version (2025.3) -- Intel no longer ships a
+REM  static OpenMP runtime archive at all (only libiomp5md.dll +
+REM  libiomp5md.lib exist under compiler/2025.3/lib), so true static
+REM  OpenMP linking is not achievable with this toolchain regardless of
+REM  flag spelling. Programs that pull in gslib/cova3.f's OpenMP code
+REM  (most kriging/simulation programs) now link dynamically against
+REM  libiomp5md.dll even though this script's flags still request
+REM  static -- the DLL copy step at the end of this script is what
+REM  actually makes bin_opt/ runnable standalone, not the flag.
 REM ============================================================
 call "C:\Program Files (x86)\Intel\oneAPI\compiler\2025.3\env\vars.bat" intel64
 set "LIB=C:\Program Files (x86)\Intel\oneAPI\compiler\2025.3\lib;%LIB%"
@@ -237,3 +247,13 @@ echo ============================================================
 echo  Build complete. OK: %OK%, FAILED: %FAIL%
 echo  Binaries in: %BINDIR%
 echo ============================================================
+REM Copy OpenMP runtime DLL -- required at runtime for any program that
+REM pulls in gslib/cova3.f's OpenMP code (see the note at the top of this
+REM script: this Intel oneAPI version has no static OpenMP archive, so
+REM /Qopenmp-link:static above no longer has any effect).
+copy /Y "%ROOT%\smoke_test\libiomp5md.dll" "%BINDIR%\" >NUL 2>&1
+if not exist "%BINDIR%\libiomp5md.dll" (
+    echo  WARNING: libiomp5md.dll not found, copy it manually!
+) else (
+    echo  Copied libiomp5md.dll to %BINDIR%
+)
