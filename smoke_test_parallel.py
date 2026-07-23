@@ -11,8 +11,17 @@ import tempfile
 import time
 import threading
 
-BINDIR = r"c:\Codename_EpicFury\gslib2_opt\bin_opt"
-SRCDIR = r"c:\Codename_EpicFury\gslib2_opt\smoke_test"
+# Default BINDIR/SRCDIR assume the traditional in-place Windows layout;
+# override via env vars for a Linux build (e.g. BINDIR=.../bin_opt_linux)
+# or any other build output location, so this one script works for both
+# build_all.bat's output and build_all.sh's output without edits.
+_ROOT_WIN = r"c:\Codename_EpicFury\gslib2_opt"
+BINDIR = os.environ.get("GSLIB_SMOKE_BINDIR", os.path.join(_ROOT_WIN, "bin_opt"))
+SRCDIR = os.environ.get("GSLIB_SMOKE_SRCDIR", os.path.join(_ROOT_WIN, "smoke_test"))
+
+# Windows executables carry a .exe suffix; Linux binaries (built by
+# build_all.sh) do not.
+EXE_SUFFIX = ".exe" if sys.platform == "win32" else ""
 
 # Environment for all programs
 ENV = os.environ.copy()
@@ -152,7 +161,7 @@ def main():
 
     for prog, (parfile, expected_outputs) in PROGRAMS.items():
         # Find executable
-        exe = os.path.join(BINDIR, f"{prog}.exe")
+        exe = os.path.join(BINDIR, f"{prog}{EXE_SUFFIX}")
         if not os.path.exists(exe):
             processes[prog] = None
             workdirs[prog] = None
@@ -190,7 +199,7 @@ def main():
 
     with ThreadPoolExecutor(max_workers=len(PROGRAMS)) as executor:
         for prog, (parfile, expected_outputs) in PROGRAMS.items():
-            exe = os.path.join(BINDIR, f"{prog}.exe")
+            exe = os.path.join(BINDIR, f"{prog}{EXE_SUFFIX}")
             wdir = workdirs.get(prog)
 
             if not os.path.exists(exe):

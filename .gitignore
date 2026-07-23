@@ -16,6 +16,7 @@
 bin/
 bin_opt/
 bin_opt2/
+bin_opt_linux/
 
 # Python cache
 __pycache__/
