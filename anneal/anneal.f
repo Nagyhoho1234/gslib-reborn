@@ -201,9 +201,9 @@ c
 c
 c Initialize the grid:
 c
-      do iz=1,MAXZ
-            do iy=1,MAXY
-                  do ix=1,MAXX
+      do iz=1,nz
+            do iy=1,ny
+                  do ix=1,nx
                         var(ix,iy,iz) = MAXROC
                   end do
             end do
